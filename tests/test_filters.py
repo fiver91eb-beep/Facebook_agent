@@ -19,3 +19,7 @@ def test_video_link_is_classified():
 
 def test_non_video_link_defaults_to_article():
     assert classify_content({"link": "https://example.com/match-report"}) == "article"
+
+
+def test_youtube_video_link_is_classified():
+    assert classify_content({"link": "https://www.youtube.com/watch?v=example"}) == "video"

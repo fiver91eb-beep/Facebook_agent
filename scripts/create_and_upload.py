@@ -135,6 +135,8 @@ def main():
         )
 
     posts = load_json(PENDING, [])
+    if not HISTORY.exists():
+        HISTORY.write_text("[]\\n", encoding="utf-8")
     history = load_json(HISTORY, [])
     today = datetime.now(timezone.utc).date().isoformat()
     uploaded_today = sum(1 for row in history if row.get("uploaded_at", "").startswith(today))

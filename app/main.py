@@ -3,12 +3,11 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
 from pathlib import Path
-import httpx
 
 from app import database
 from app.agents.runner import run_ingestion
 from app.database import get_item, list_items, set_status
-from app.publishing.facebook import PublishingDisabledError, publish_link
+from app.publishing.buffer import BufferPublishingError, list_channels, publish_link
 from config.settings import settings
 
 
@@ -19,8 +18,8 @@ async def lifespan(_: FastAPI):
 
 
 app = FastAPI(title=settings.app_name,
-              description='Collect sports articles and video links, then review before publishing.',
-              version='0.1.0', lifespan=lifespan)
+              description='Collect sports articles and video links, then review before publishing through Buffer.',
+              version='0.2.0', lifespan=lifespan)
 
 
 @app.get('/')
@@ -30,13 +29,27 @@ def root():
 
 @app.get('/api/status')
 def api_status():
-    return {'name': settings.app_name, 'status': 'running', 'docs': '/docs',
-            'publishing_enabled': settings.publish_enabled}
+    return {
+        'name': settings.app_name,
+        'status': 'running',
+        'docs': '/docs',
+        'publishing_enabled': settings.publish_enabled,
+        'publisher': 'Buffer',
+        'buffer_configured': bool(settings.buffer_api_key and settings.buffer_channel_id),
+    }
 
 
 @app.get('/health')
 def health():
     return {'status': 'ok'}
+
+
+@app.get('/api/buffer/channels')
+def buffer_channels():
+    try:
+        return list_channels()
+    except BufferPublishingError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
 
 
 @app.post('/api/ingest')
@@ -48,7 +61,7 @@ def ingest():
 
 
 @app.get('/api/items')
-def items(status: str | None = Query(default=None, pattern='^(pending|approved|published|rejected)$'),
+def items(status: str | None = Query(default=None, pattern='^(pending|approved|queued|published|rejected)$'),
           limit: int = Query(default=50, ge=1, le=200)):
     return list_items(status=status, limit=limit)
 
@@ -77,10 +90,13 @@ def publish(item_id: int):
     if item['status'] != 'approved':
         raise HTTPException(status_code=409, detail='Approve this item before publishing')
     try:
-        result = publish_link(item['title'], item['url'])
-    except PublishingDisabledError as exc:
-        raise HTTPException(status_code=503, detail=str(exc)) from exc
-    except httpx.HTTPError as exc:
-        raise HTTPException(status_code=502, detail=f'Facebook API request failed: {exc}') from exc
-    set_status(item_id, 'published')
-    return {'id': item_id, 'status': 'published', 'facebook': result}
+        result = publish_link(
+            message=item['title'],
+            link=item['url'],
+            title=item['title'],
+            description=item.get('summary', ''),
+        )
+    except BufferPublishingError as exc:
+        raise HTTPException(status_code=502, detail=f'Buffer publishing failed: {exc}') from exc
+    set_status(item_id, 'queued')
+    return {'id': item_id, 'status': 'queued', 'buffer': result}

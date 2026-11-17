@@ -1828,5 +1828,135 @@
     "source": "Latest F1 News",
     "collected_at": "2026-11-17T11:08:18.166879+00:00",
     "status": "pending"
+  },
+  {
+    "title": "London City's Goodwin gets first England call-up",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cr9d7pw90x14o?at_medium=RSS&at_campaign=rss",
+    "summary": "London City Lionesses forward Izzy Goodwin is named in the England squad for the first time for the World Cup qualifying play-off against Ukraine.",
+    "category": "cricket",
+    "content_type": "article",
+    "source": "BBC Sport",
+    "collected_at": "2026-11-17T12:15:59.450068+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "Almost impossible for Scotland to not qualify for Euro 2028... or is it?",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cm62p7eg7nqvo?at_medium=RSS&at_campaign=rss",
+    "summary": "BBC Scotland picks its way through the permutations in Scotland's pursuit of Euro 2028 qualification.",
+    "category": "football",
+    "content_type": "article",
+    "source": "BBC Sport",
+    "collected_at": "2026-11-17T12:15:59.450111+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "Coach given one-game ban for head push on female player",
+    "url": "https://www.bbc.co.uk/sport/basketball/articles/cw808v4vj7exo?at_medium=RSS&at_campaign=rss",
+    "summary": "University basketball coach Bill Fennelly is given a one-game suspension for pushing a female player on the head during a timeout.",
+    "category": "basketball",
+    "content_type": "article",
+    "source": "BBC Sport",
+    "collected_at": "2026-11-17T12:15:59.450166+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "Triple Scotland injury blow for Japan finale",
+    "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cq8e0wzrrzgpo?at_medium=RSS&at_campaign=rss",
+    "summary": "Captain Sione Tuipulotu, scrum-half Ben White and number eight Jack Dempsey are ruled out of Scotland's final Nations Championship group game at home to Japan on Saturday.",
+    "category": "cricket",
+    "content_type": "article",
+    "source": "BBC Sport",
+    "collected_at": "2026-11-17T12:15:59.450196+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "'Why not have a go?' - the halfway line goal phenomenon",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cw24041nqlygo?at_medium=RSS&at_campaign=rss",
+    "summary": "Why Premier League players are trying their luck on goal from long range more regularly.",
+    "category": "football",
+    "content_type": "article",
+    "source": "BBC Sport",
+    "collected_at": "2026-11-17T12:15:59.450208+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "GB's Patten criticises ATP chairman and CEO for absence",
+    "url": "https://www.bbc.co.uk/sport/tennis/articles/cmreg732el2vo?at_medium=RSS&at_campaign=rss",
+    "summary": "Britain's top-ranked doubles player Henry Patten criticises the ATP's chairman and CEO for missing the year-end world number one trophy presentation.",
+    "category": "tennis",
+    "content_type": "article",
+    "source": "BBC Sport",
+    "collected_at": "2026-11-17T12:15:59.450228+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "When is the Nations League quarter-final draw?",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cw20xnde3dyzo?at_medium=RSS&at_campaign=rss",
+    "summary": "Our Ask Me Anything Team tell you all you need to know about the Nations League quarter-final draw.",
+    "category": "football",
+    "content_type": "article",
+    "source": "BBC Sport",
+    "collected_at": "2026-11-17T12:15:59.707609+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "Chelsea latest: Estevao scores in dominant Brazil win",
+    "url": "https://www.skysports.com/football/live-blog/12040/13025497/chelsea-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+    "summary": "",
+    "category": "football",
+    "content_type": "article",
+    "source": "SkySports | News",
+    "collected_at": "2026-11-17T12:16:00.031408+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "NFL Week 11 games live on Sky Sports",
+    "url": "https://www.skysports.com/nfl/news/12040/13582747/nfl-2026-season-live-on-sky-sports-fixtures-kick-off-times-tv-channel-for-games-this-week-and-weekend",
+    "summary": "When is NFL next live on Sky Sports? We take a look at this week's live action and which channels you can follow the matches on...",
+    "category": "other",
+    "content_type": "article",
+    "source": "SkySports | News",
+    "collected_at": "2026-11-17T12:16:00.031446+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "Barrow remove themselves from Super League consideration",
+    "url": "https://www.skysports.com/rugby-league/news/12040/13613155/barrow-raiders-remove-themselves-from-super-league-consideration-after-competition-announces-extra-place-for-2027-season",
+    "summary": "Championship club Barrow Raiders have removed themselves from consideration for a Super League place after the competition announced an expansion to 15 teams for the 2027 season.",
+    "category": "other",
+    "content_type": "article",
+    "source": "SkySports | News",
+    "collected_at": "2026-11-17T12:16:00.031472+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "Cox: Three hundreds not enough to keep Buttler out",
+    "url": "https://www.skysports.com/cricket/news/12040/13613121/jordan-cox-three-hundreds-not-enough-to-keep-jos-buttler-out-englands-best-ever",
+    "summary": "Jordan Cox insists Jos Buttler has earned the right to come back into England's ODI side, even if he was to score three hundreds while the country's \"best ever\" white-ball player recovers from injury.",
+    "category": "cricket",
+    "content_type": "article",
+    "source": "SkySports | News",
+    "collected_at": "2026-11-17T12:16:00.031495+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "DeChambeau confirms DP World Tour membership after LIV Golf's collapse",
+    "url": "https://www.skysports.com/golf/news/12040/13613165/bryson-dechambeau-former-major-champion-takes-dp-world-tour-membership-for-2027-season-after-liv-golfs-collapse",
+    "summary": "Bryson DeChambeau has taken membership on the DP World Tour for the 2027 season, following the collapse of the LIV Golf League.",
+    "category": "other",
+    "content_type": "article",
+    "source": "SkySports | News",
+    "collected_at": "2026-11-17T12:16:00.031534+00:00",
+    "status": "pending"
+  },
+  {
+    "title": "Cox: Three hundreds not enough to keep Buttler out",
+    "url": "https://www.skysports.com/cricket/news/12123/13613121/jordan-cox-three-hundreds-not-enough-to-keep-jos-buttler-out-englands-best-ever",
+    "summary": "Jordan Cox insists Jos Buttler has earned the right to come back into England's ODI side, even if he was to score three hundreds while the country's \"best ever\" white-ball player recovers from injury.",
+    "category": "cricket",
+    "content_type": "article",
+    "source": "SkySports | News",
+    "collected_at": "2026-11-17T12:16:00.087776+00:00",
+    "status": "pending"
   }
 ]

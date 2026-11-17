@@ -4,6 +4,7 @@ import os
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
@@ -16,15 +17,16 @@ PENDING = DATA / "pending_posts.json"
 HISTORY = DATA / "video_upload_history.json"
 ENDPOINT = "https://api.buffer.com"
 MAX_PER_RUN = int(os.getenv("MAX_VIDEOS_PER_RUN", "1"))
-DAILY_LIMIT = 10
+DAILY_LIMIT = 6
+PAKISTAN_TZ = ZoneInfo("Asia/Karachi")
+MAX_AGE_HOURS = 72
 REPOSITORY = os.getenv("GITHUB_REPOSITORY", "fiver91eb-beep/Facebook_agent")
-
+RETIREMENT_TERMS = ("retire", "retirement", "retires", "retired", "farewell", "steps down")
 
 def load_json(path, fallback):
     if not path.exists():
         return fallback
     return json.loads(path.read_text(encoding="utf-8"))
-
 
 def buffer_request(query, variables, api_key):
     payload = json.dumps({"query": query, "variables": variables}).encode()
@@ -42,11 +44,8 @@ def buffer_request(query, variables, api_key):
         raise RuntimeError("; ".join(e.get("message", "GraphQL error") for e in result["errors"]))
     return result.get("data") or {}
 
-
 def find_facebook_channel(api_key):
-    org_data = buffer_request(
-        "query { account { organizations { id name } } }", {}, api_key
-    )
+    org_data = buffer_request("query { account { organizations { id name } } }", {}, api_key)
     organizations = (org_data.get("account") or {}).get("organizations") or []
     matches = []
     channel_query = """
@@ -74,12 +73,31 @@ def find_facebook_channel(api_key):
     raise SystemExit("Multiple Facebook Pages found in Buffer: " + ", ".join(names) +
                      ". Keep only the intended Page connected or configure channel selection.")
 
+def allowed_item(item, now):
+    category = (item.get("category") or "").lower()
+    if category not in ("cricket", "football"):
+        return False
+    text = (item.get("title", "") + " " + item.get("summary", "")).lower()
+    if any(term in text for term in RETIREMENT_TERMS):
+        return False
+    try:
+        published = datetime.fromisoformat(item.get("published_at", item.get("collected_at", "")))
+        if published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
+        return False
+    age = now - published.astimezone(timezone.utc)
+    if age.total_seconds() < -7200 or age.total_seconds() > MAX_AGE_HOURS * 3600:
+        return False
+    try:
+        return float(item.get("trend_score", 0)) >= 1.5
+    except (TypeError, ValueError):
+        return False
 
 def font(size, bold=False):
     path = ("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else
             "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
     return ImageFont.truetype(path, size) if Path(path).exists() else ImageFont.load_default()
-
 
 def wrap_words(draw, text, face, max_width):
     lines, current = [], ""
@@ -95,7 +113,6 @@ def wrap_words(draw, text, face, max_width):
         lines.append(current)
     return lines
 
-
 def render_card(item, output):
     width, height = 720, 1280
     image = Image.new("RGB", (width, height))
@@ -104,30 +121,25 @@ def render_card(item, output):
         ratio = y / height
         color = (int(8 + 10 * ratio), int(20 + 22 * ratio), int(48 + 45 * ratio))
         draw.line((0, y, width, y), fill=color)
-
     draw.rounded_rectangle((42, 55, 678, 1225), radius=34, outline=(70, 135, 220), width=3)
-    draw.text((78, 105), "SPORTS LOVER  |  DAILY UPDATE", font=font(25, True), fill=(110, 195, 255))
-    draw.rounded_rectangle((78, 190, 360, 246), radius=18, fill=(18, 95, 145))
+    draw.text((78, 105), "SPORTS LOVER  |  TRENDING PICK", font=font(25, True), fill=(110, 195, 255))
     category = (item.get("category") or "SPORTS").upper()
+    draw.rounded_rectangle((78, 190, 360, 246), radius=18, fill=(18, 95, 145))
     draw.text((98, 202), category[:22], font=font(23, True), fill="white")
-
     title = item.get("title") or "Today's Sports Update"
     y = 320
     for line in wrap_words(draw, title, font(43, True), 550)[:6]:
         draw.text((78, y), line, font=font(43, True), fill="white")
         y += 60
-
     summary = item.get("summary") or "Follow the latest sports stories and updates."
     y = max(y + 45, 760)
     for line in wrap_words(draw, summary, font(27), 550)[:8]:
         draw.text((80, y), line, font=font(27), fill=(205, 220, 240))
         y += 42
-
     draw.line((78, 1080, 642, 1080), fill=(70, 135, 220), width=2)
-    draw.text((78, 1110), "Follow Sports Lover for more updates", font=font(24, True), fill=(110, 195, 255))
+    draw.text((78, 1110), "Follow Sports Lover for more", font=font(24, True), fill=(110, 195, 255))
     draw.text((78, 1160), "Source link is included in caption", font=font(18), fill=(165, 180, 205))
     image.save(output, quality=92)
-
 
 def make_video(card, output):
     command = [
@@ -139,37 +151,27 @@ def make_video(card, output):
     ]
     subprocess.run(command, check=True, capture_output=True)
 
-
 def publish_release_asset(video_path, asset_name, release_tag, github_token):
     if not github_token:
         raise SystemExit("GitHub Actions did not provide GITHUB_TOKEN.")
     env = os.environ.copy()
     env["GH_TOKEN"] = github_token
-
-    check = subprocess.run(
-        ["gh", "release", "view", release_tag, "--repo", REPOSITORY],
-        env=env, text=True, capture_output=True
-    )
+    check = subprocess.run(["gh", "release", "view", release_tag, "--repo", REPOSITORY],
+                           env=env, text=True, capture_output=True)
     if check.returncode != 0:
         create = subprocess.run(
             ["gh", "release", "create", release_tag, "--repo", REPOSITORY,
              "--title", f"Sports Lover videos {release_tag}",
-             "--notes", "Generated sports news-card videos used by the Sports Lover publishing agent."],
-            env=env, text=True, capture_output=True
-        )
+             "--notes", "Original animated cricket and football trend cards."],
+            env=env, text=True, capture_output=True)
         if create.returncode != 0:
             raise RuntimeError("Could not create GitHub media release: " + create.stderr[-1500:])
-
-    upload = subprocess.run(
-        ["gh", "release", "upload", release_tag, str(video_path),
-         "--repo", REPOSITORY, "--clobber"],
-        env=env, text=True, capture_output=True
-    )
+    upload = subprocess.run(["gh", "release", "upload", release_tag, str(video_path),
+                             "--repo", REPOSITORY, "--clobber"],
+                            env=env, text=True, capture_output=True)
     if upload.returncode != 0:
         raise RuntimeError("Could not upload video to GitHub Release: " + upload.stderr[-1500:])
-
     return f"https://github.com/{REPOSITORY}/releases/download/{release_tag}/{asset_name}"
-
 
 def verify_public_video_url(url):
     response = requests.get(url, headers={"Range": "bytes=0-1023"},
@@ -183,13 +185,12 @@ def verify_public_video_url(url):
     finally:
         response.close()
 
-
 def queue_video_in_buffer(item, video_url, channel_id, api_key):
     text = (
         (item.get("title") or "Sports Update")[:180]
         + "\n\n" + (item.get("summary") or "")[:1200]
         + "\n\nSource: " + (item.get("url") or "")
-        + "\nOriginal Sports Lover animated news card."
+        + "\nOriginal Sports Lover animated trend card."
     )
     mutation = """
     mutation QueueSportsVideo($input: CreatePostInput!) {
@@ -208,70 +209,92 @@ def queue_video_in_buffer(item, video_url, channel_id, api_key):
         "assets": [{"video": {"url": video_url}}],
     }}, api_key)
     result = data.get("createPost") or {}
-    if result.get("message") or not result.get("post"):
-        raise RuntimeError(result.get("message") or "Buffer did not confirm that the video was queued.")
+    message = result.get("message") or ""
+    if "scheduled posts limit reached" in message.lower():
+        return {"queue_full": True, "message": message}
+    if message or not result.get("post"):
+        raise RuntimeError(message or "Buffer did not confirm that the video was queued.")
     return result["post"]
-
 
 def main():
     api_key = os.getenv("BUFFER_API_KEY", "").strip()
     if not api_key:
-        raise SystemExit("Missing BUFFER_API_KEY GitHub Actions secret. Add it in repository Actions secrets.")
+        raise SystemExit("Missing BUFFER_API_KEY GitHub Actions secret.")
     channel_id = find_facebook_channel(api_key)
-
     posts = load_json(PENDING, [])
     history = load_json(HISTORY, [])
     if not HISTORY.exists():
         HISTORY.write_text("[]\n", encoding="utf-8")
-    today = datetime.now(timezone.utc).date().isoformat()
-    uploaded_today = sum(1 for row in history if row.get("queued_at", "").startswith(today))
+
+    now = datetime.now(timezone.utc)
+    local_today = now.astimezone(PAKISTAN_TZ).date()
+    uploaded_today = 0
+    for row in history:
+        try:
+            queued = datetime.fromisoformat(row.get("queued_at", ""))
+            if queued.tzinfo is None:
+                queued = queued.replace(tzinfo=timezone.utc)
+            if queued.astimezone(PAKISTAN_TZ).date() == local_today:
+                uploaded_today += 1
+        except (TypeError, ValueError):
+            continue
     if uploaded_today >= DAILY_LIMIT:
-        print(f"Daily queue limit reached: {uploaded_today}/{DAILY_LIMIT} videos (UTC).")
+        print(f"Pakistan daily queue limit reached: {uploaded_today}/{DAILY_LIMIT} videos.")
         return
 
     queued_urls = {row.get("url") for row in history}
-    candidates = [
-        item for item in reversed(posts)
-        if item.get("url") and item["url"] not in queued_urls and item.get("title")
-    ][:min(MAX_PER_RUN, DAILY_LIMIT - uploaded_today)]
+    candidates = [item for item in posts
+                  if item.get("url") and item["url"] not in queued_urls
+                  and item.get("title") and allowed_item(item, now)]
+    candidates.sort(key=lambda item: (
+        float(item.get("trend_score", 0)),
+        item.get("published_at", "")
+    ), reverse=True)
+    candidates = candidates[:min(MAX_PER_RUN, DAILY_LIMIT - uploaded_today)]
     if not candidates:
-        print("No new sports stories are waiting. No video was queued.")
+        print("No fresh, high-priority cricket/football picks passed the trend filter. Nothing queued.")
         return
 
-    release_tag = "sports-media-" + today.replace("-", "")
+    release_tag = "sports-media-" + local_today.strftime("%Y%m%d")
     temp = DATA / "generated"
     temp.mkdir(parents=True, exist_ok=True)
     github_token = os.getenv("GITHUB_TOKEN", "")
 
-    for index, item in enumerate(candidates, start=1):
+    queued_this_run = 0
+    for item in candidates:
         digest = hashlib.sha256(item["url"].encode()).hexdigest()[:12]
-        asset_name = f"sports-{today}-{digest}.mp4"
+        asset_name = f"sports-{local_today}-{digest}.mp4"
         card = temp / f"{digest}.jpg"
         video = temp / asset_name
         render_card(item, card)
         make_video(card, video)
-
         video_url = publish_release_asset(video, asset_name, release_tag, github_token)
         verify_public_video_url(video_url)
         post = queue_video_in_buffer(item, video_url, channel_id, api_key)
+        if post.get("queue_full"):
+            print("Buffer scheduled-post queue is full (10/10). Stopping safely; no Facebook post was published.")
+            card.unlink(missing_ok=True)
+            video.unlink(missing_ok=True)
+            break
 
         history.append({
             "url": item["url"],
             "title": item.get("title", ""),
-            "category": item.get("category", "sports"),
+            "category": item.get("category"),
+            "trend_score": item.get("trend_score", 0),
             "buffer_post_id": post.get("id"),
             "video_url": video_url,
             "queued_at": datetime.now(timezone.utc).isoformat(),
             "status": "queued_in_buffer",
         })
         HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        queued_this_run += 1
         print(f"Buffer confirmed native video post queued: {post.get('id')} | dueAt={post.get('dueAt')} | {item.get('title', '')}")
         card.unlink(missing_ok=True)
         video.unlink(missing_ok=True)
 
-    print(f"Videos queued this run: {len(candidates)} | Daily total: {uploaded_today + len(candidates)}/{DAILY_LIMIT}")
-    print("Note: Buffer queue confirmation is not the same as Facebook publication confirmation.")
-
+    print(f"Videos queued this run: {queued_this_run} | Pakistan daily total: {uploaded_today + queued_this_run}/{DAILY_LIMIT}")
+    print("A Buffer queue confirmation is not the same as Facebook publication confirmation.")
 
 if __name__ == "__main__":
     main()

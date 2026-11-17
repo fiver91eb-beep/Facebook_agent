@@ -9,7 +9,7 @@ on:
       - "scripts/collect_github.py"
   workflow_dispatch:
   schedule:
-    - cron: "17 */2 * * *"
+    - cron: "0 */4 * * *"
 
 permissions:
   contents: write
@@ -35,9 +35,9 @@ jobs:
           sudo apt-get install -y ffmpeg
       - name: Install Python packages
         run: pip install pillow requests feedparser
-      - name: Collect latest sports stories
+      - name: Collect latest cricket and football trends
         run: python scripts/collect_github.py
-      - name: Create video, host it publicly, and queue it in Buffer
+      - name: Create original trend card video and queue in Buffer
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -50,5 +50,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/pending_posts.json data/video_upload_history.json
-          git diff --cached --quiet || git commit -m "Save sports video queue history"
+          git diff --cached --quiet || git commit -m "Save cricket and football trend queue history"
           git push

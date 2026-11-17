@@ -30,7 +30,9 @@ Set these as environment variables in your hosting provider. Do not put real cre
 | `PUBLISH_ENABLED` | Must remain `false` until Buffer is configured and tested |
 | `DATABASE_PATH` | SQLite file path; default `data/sports_agent.db` |
 
-Example feed configuration (replace with RSS URLs you have checked and are allowed to use):
+Starter feeds are prefilled in the included Render Blueprint and `.env.example`: BBC Sport (all sports, football, cricket), Sky Sports (all sports, cricket, tennis, Formula 1), ESPNcricinfo (cricket), and Formula1.com. Feed addresses can change or temporarily reject requests, so check the dashboard collection result and remove any source that stops working. See the feed list reference: https://www.feeder.co/knowledge-base/rss-content/sports-news-rss-feeds/ (updated November 10, 2026).
+
+Example format for adding or replacing feeds:
 
 ```json
 ["https://example.com/sports/rss.xml","https://example.org/football/feed"]

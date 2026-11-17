@@ -1,4 +1,4 @@
-name: Sports Lover Agent - 10 Daily Native Videos
+name: Sports Lover Agent - Buffer Native Videos
 
 on:
   push:
@@ -19,9 +19,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  create-and-upload:
+  create-and-queue:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -34,24 +34,21 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg
       - name: Install Python packages
-        run: pip install feedparser pillow requests
+        run: pip install pillow requests feedparser
       - name: Collect latest sports stories
         run: python scripts/collect_github.py
-      - name: Create and upload one native sports video
-        if: ${{ secrets.FACEBOOK_PAGE_ID != '' && secrets.FACEBOOK_PAGE_ACCESS_TOKEN != '' }}
+      - name: Create video, host it publicly, and queue it in Buffer
         env:
-          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
-          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
-          META_GRAPH_VERSION: v27.0
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
           MAX_VIDEOS_PER_RUN: "1"
         run: python scripts/create_and_upload.py
-      - name: Explain missing Facebook credentials
-        if: ${{ secrets.FACEBOOK_PAGE_ID == '' || secrets.FACEBOOK_PAGE_ACCESS_TOKEN == '' }}
-        run: echo "Collection completed. Add FACEBOOK_PAGE_ID and FACEBOOK_PAGE_ACCESS_TOKEN in GitHub Settings > Secrets and variables > Actions to enable native video uploads."
-      - name: Save collection and upload history
+      - name: Save collection and Buffer queue history
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/pending_posts.json data/video_upload_history.json
-          git diff --cached --quiet || git commit -m "Save sports video publishing history"
+          git diff --cached --quiet || git commit -m "Save sports video queue history"
           git push

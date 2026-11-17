@@ -33,7 +33,7 @@ def api_status():
         'name': settings.app_name,
         'status': 'running',
         'docs': '/docs',
-        'publishing_enabled': settings.publish_enabled,
+        'publishing_enabled': settings.publish_enabled and bool(settings.buffer_api_key and settings.buffer_channel_id),
         'publisher': 'Buffer',
         'buffer_configured': bool(settings.buffer_api_key and settings.buffer_channel_id),
     }

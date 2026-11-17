@@ -220,6 +220,8 @@ def main():
 
     posts = load_json(PENDING, [])
     history = load_json(HISTORY, [])
+    if not HISTORY.exists():
+        HISTORY.write_text("[]\n", encoding="utf-8")
     today = datetime.now(timezone.utc).date().isoformat()
     uploaded_today = sum(1 for row in history if row.get("queued_at", "").startswith(today))
     if uploaded_today >= DAILY_LIMIT:

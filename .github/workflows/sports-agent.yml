@@ -38,12 +38,16 @@ jobs:
       - name: Collect latest sports stories
         run: python scripts/collect_github.py
       - name: Create and upload one native sports video
+        if: ${{ secrets.FACEBOOK_PAGE_ID != '' && secrets.FACEBOOK_PAGE_ACCESS_TOKEN != '' }}
         env:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           META_GRAPH_VERSION: v27.0
           MAX_VIDEOS_PER_RUN: "1"
         run: python scripts/create_and_upload.py
+      - name: Explain missing Facebook credentials
+        if: ${{ secrets.FACEBOOK_PAGE_ID == '' || secrets.FACEBOOK_PAGE_ACCESS_TOKEN == '' }}
+        run: echo "Collection completed. Add FACEBOOK_PAGE_ID and FACEBOOK_PAGE_ACCESS_TOKEN in GitHub Settings > Secrets and variables > Actions to enable native video uploads."
       - name: Save collection and upload history
         run: |
           git config user.name "github-actions[bot]"

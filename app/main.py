@@ -1,6 +1,8 @@
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import FileResponse
+from pathlib import Path
 import httpx
 
 from app import database
@@ -23,6 +25,11 @@ app = FastAPI(title=settings.app_name,
 
 @app.get('/')
 def root():
+    return FileResponse(Path(__file__).parent / 'static' / 'index.html')
+
+
+@app.get('/api/status')
+def api_status():
     return {'name': settings.app_name, 'status': 'running', 'docs': '/docs',
             'publishing_enabled': settings.publish_enabled}
 

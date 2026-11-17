@@ -187,9 +187,9 @@ def verify_public_video_url(url):
 def queue_video_in_buffer(item, video_url, channel_id, api_key):
     text = (
         (item.get("title") or "Sports Update")[:180]
-        + "\\n\\n" + (item.get("summary") or "")[:1200]
-        + "\\n\\nSource: " + (item.get("url") or "")
-        + "\\nOriginal Sports Lover animated news card."
+        + "\n\n" + (item.get("summary") or "")[:1200]
+        + "\n\nSource: " + (item.get("url") or "")
+        + "\nOriginal Sports Lover animated news card."
     )
     mutation = """
     mutation QueueSportsVideo($input: CreatePostInput!) {
@@ -261,7 +261,7 @@ def main():
             "queued_at": datetime.now(timezone.utc).isoformat(),
             "status": "queued_in_buffer",
         })
-        HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+        HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"Buffer confirmed native video post queued: {post.get('id')} | dueAt={post.get('dueAt')} | {item.get('title', '')}")
         card.unlink(missing_ok=True)
         video.unlink(missing_ok=True)

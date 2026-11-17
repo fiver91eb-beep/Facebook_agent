@@ -91,7 +91,7 @@ def make_video(card, output):
     command = [
         "ffmpeg", "-y", "-loop", "1", "-i", str(card),
         "-t", "12", "-vf",
-        "scale=8000:-1,zoompan=z='min(zoom+0.0007,1.035)':d=360:s=720x1280:fps=30,format=yuv420p",
+        "scale=800:1422,zoompan=z='min(zoom+0.0007,1.035)':d=360:s=720x1280:fps=30,format=yuv420p",
         "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "25",
         "-movflags", "+faststart", str(output)
     ]

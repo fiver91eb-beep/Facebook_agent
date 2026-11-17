@@ -8,9 +8,8 @@ class Settings(BaseSettings):
     max_items_per_feed: int = 30
     sports_feeds: str = "[]"
     publish_enabled: bool = False
-    facebook_page_id: str = ""
-    facebook_page_access_token: str = ""
-    meta_graph_api_version: str = "v23.0"
+    buffer_api_key: str = ""
+    buffer_channel_id: str = ""
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 

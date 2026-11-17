@@ -1,68 +1,49 @@
-# Sports Lover Agent — GitHub-only edition
+# Sports Lover Agent
 
-This version uses GitHub Actions as the automation runner. It does not require Render or a continuously running server.
+GitHub Actions based sports-content video publisher.
 
-## What it does
+## Current workflow
 
-1. Runs the sports collector every 6 hours (or manually from the Actions tab).
-2. Reads the configured RSS feeds in `scripts/collect_github.py`.
-3. Filters stories into Cricket, Football, Tennis, Basketball, Formula 1, and Other sports.
-4. Labels matching links as article or video-link candidates.
-5. Saves new items in `data/pending_posts.json` and commits the updated file to this repository.
-6. You approve posts by copying their exact URL into `data/approved_urls.txt`.
-7. You manually run **Actions → Publish Approved Sports Links → Run workflow**. The workflow sends approved links to the Buffer queue and records URLs already queued to prevent repeat submissions.
+- Collects sports headlines from configured RSS feeds every two hours.
+- Creates an original vertical 12-second animated text video for a collected sports story.
+- Uploads the MP4 as a native Facebook Page video through Meta Graph API.
+- Keeps upload history and avoids uploading the same source URL twice.
+- Enforces a maximum of 10 successful uploads per UTC day (one scheduled attempt every two hours).
+- Manual runs are available from **Actions → Sports Lover Agent - 10 Daily Native Videos → Run workflow**.
 
-## GitHub-only setup
+**Important:** The current video format is an original animated text/news card. It is not match footage, highlights, or AI-generated live sports footage. The agent can publish up to 10 videos per UTC day when at least 10 new sports stories are available. If fewer new stories are collected, it uploads fewer; it does not invent news.
 
-### 1. Enable Actions write permission
-
-In the repository, open **Settings → Actions → General → Workflow permissions** and select **Read and write permissions**, then save.
-
-### 2. Add Buffer secrets
+## Required GitHub Actions secrets
 
 Open **Settings → Secrets and variables → Actions → New repository secret** and add:
 
-- `BUFFER_API_KEY`: your Buffer API key.
-- `BUFFER_CHANNEL_ID`: the ID of the Facebook Page channel connected in Buffer.
+1. `FACEBOOK_PAGE_ID` — the numeric ID of the Facebook Page.
+2. `FACEBOOK_PAGE_ACCESS_TOKEN` — a Page access token for a person with the Page's **CREATE_CONTENT** task and the required permissions: `pages_manage_posts`, `pages_read_engagement`, and `pages_show_list`.
 
-Never put these credentials in source files, commits, issues, or chat. If a secret is exposed, revoke and replace it.
+Do not put tokens in code, commits, issues, or chat. If a token is exposed, revoke it and create a new one.
 
-### 3. Collect content
+Meta's Page Videos endpoint is `/{page_id}/videos`. Meta documents that publishing requires a Page access token and the permissions listed above:
+https://developers.facebook.com/docs/graph-api/reference/page/videos
 
-Open **Actions → Collect Sports Content → Run workflow** to run it immediately. Otherwise the schedule runs every six hours. GitHub scheduled workflows can be delayed during busy periods and run from the default branch.
+## Run and verify
 
-After it completes, open `data/pending_posts.json` to review the collected links.
+1. Add both secrets.
+2. Open the repository's **Actions** tab.
+3. Select **Sports Lover Agent - 10 Daily Native Videos**.
+4. Press **Run workflow**.
+5. Open the run logs. A successful upload prints `Facebook confirmed native video upload` with the returned video ID.
+6. Check the Facebook Page's Videos/Reels area to confirm it is visible.
 
-### 4. Approve and queue content
+The schedule attempts one upload every two hours. GitHub scheduled workflows can be delayed, so exact posting times are not guaranteed.
 
-Edit `data/approved_urls.txt` on GitHub and add one exact URL per line. Commit the change. Then open **Actions → Publish Approved Sports Links → Run workflow**.
+## Source and copyright
 
-A successful run means Buffer accepted the link into its queue; it does not mean Facebook has already published it. Buffer controls the actual queue schedule.
-
-## Content rules
-
-- Categories and keyword conditions are in `SPORTS` inside `scripts/collect_github.py`.
-- Feed URLs are in `FEEDS` in the same file.
-- The classifier is keyword-based, not AI-based.
-- Video detection only identifies likely video links from URL/text hints. It does not download or upload video files.
-- Only publish content you have permission to share and comply with each source's and platform's terms.
-
-## Important GitHub limitations
-
-- GitHub Actions is a scheduled/on-demand job runner, not an always-on backend host.
-- This GitHub-only version does **not** provide a live dashboard or a continuously available HTTP API.
-- Collection and publishing happen only when their respective workflows run.
-- Collected and published URL history is stored in repository JSON files. Keep the repository private if the collected data should not be public.
-- The Buffer GraphQL request is implemented but must be verified with your own Buffer account and secrets before relying on it.
+The system uses sports RSS headlines as source material for original text-based video cards. It does not download or repost broadcast footage or third-party match highlights. A source link is included in the Facebook description for context.
 
 ## Main files
 
-- `scripts/collect_github.py` — RSS collection, category filtering, deduplication, article/video-link classification.
-- `scripts/publish_approved.py` — sends manually approved links to Buffer.
-- `.github/workflows/collect-sports.yml` — scheduled/manual collector.
-- `.github/workflows/publish-approved.yml` — manual publisher.
-- `data/pending_posts.json` — collected content waiting for review.
-- `data/approved_urls.txt` — URLs approved by the owner.
-- `data/published_urls.json` — URLs already accepted by Buffer.
-
-The older FastAPI/Render prototype files remain in the repository but are not used by these GitHub Actions workflows.
+- `scripts/collect_github.py` — sports RSS collection and deduplication.
+- `scripts/create_and_upload.py` — renders a vertical MP4 and uploads it to the Facebook Page.
+- `.github/workflows/sports-agent.yml` — scheduled/manual automation.
+- `data/pending_posts.json` — collected sports stories.
+- `data/video_upload_history.json` — successful upload history and daily-limit tracking.

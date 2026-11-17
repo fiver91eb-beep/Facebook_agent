@@ -1,4 +1,5 @@
 import asyncio
+import logging
 import secrets
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -15,17 +16,21 @@ from config.settings import settings
 
 async def automatic_ingestion_loop():
     """Collect configured feeds periodically without blocking the web server."""
+    # Give the application a moment to finish startup, then perform the first
+    # collection. Subsequent collections follow the configured interval.
+    await asyncio.sleep(15)
     while True:
+        if settings.auto_ingest_enabled:
+            try:
+                if settings.feed_urls():
+                    result = await asyncio.to_thread(run_ingestion)
+                    if result.get("errors"):
+                        logging.warning("Scheduled feed collection reported errors: %s", result["errors"])
+                else:
+                    logging.info("Scheduled collection skipped: no sports feeds are configured.")
+            except Exception:
+                logging.exception("Scheduled sports feed collection failed.")
         await asyncio.sleep(settings.ingest_interval_seconds)
-        if not settings.auto_ingest_enabled:
-            continue
-        try:
-            if settings.feed_urls():
-                await asyncio.to_thread(run_ingestion)
-        except Exception:
-            # Keep the scheduler alive; errors are visible through manual collection
-            # and server logs, without crashing the web service.
-            continue
 
 
 @asynccontextmanager

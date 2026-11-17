@@ -55,7 +55,7 @@ def list_channels() -> list[dict]:
     results: list[dict] = []
 
     channels_query = """
-    query GetChannels($organizationId: String!) {
+    query GetChannels($organizationId: OrganizationId!) {
       channels(input: { organizationId: $organizationId }) {
         id
         name

@@ -1,49 +1,50 @@
 # Sports Lover Agent
 
-GitHub Actions based sports-content video publisher.
+GitHub Actions based sports-news video creator and Buffer publisher.
 
-## Current workflow
+## What it does
 
 - Collects sports headlines from configured RSS feeds every two hours.
-- Creates an original vertical 12-second animated text video for a collected sports story.
-- Uploads the MP4 as a native Facebook Page video through Meta Graph API.
-- Keeps upload history and avoids uploading the same source URL twice.
-- Enforces a maximum of 10 successful uploads per UTC day (one scheduled attempt every two hours).
-- Manual runs are available from **Actions → Sports Lover Agent - 10 Daily Native Videos → Run workflow**.
+- Creates an original vertical 12-second MP4 animated text/news-card video.
+- Uploads each MP4 as a public GitHub Release asset (the repository must be public).
+- Verifies that the release URL can be fetched publicly.
+- Queues the video as a native media post through the connected Facebook Page in Buffer.
+- Enforces a maximum of 10 videos queued per UTC day and avoids re-queuing the same source URL.
+- Runs automatically every two hours; manual runs are available from **Actions → Sports Lover Agent - Buffer Native Videos → Run workflow**.
 
-**Important:** The current video format is an original animated text/news card. It is not match footage, highlights, or AI-generated live sports footage. The agent can publish up to 10 videos per UTC day when at least 10 new sports stories are available. If fewer new stories are collected, it uploads fewer; it does not invent news.
+**Important:** These are original animated sports-news cards, not match footage, highlights, or AI-generated live sports footage. The agent queues up to 10 videos per UTC day only when enough new sports stories are available. It does not fabricate sports news. Buffer's queue schedule determines the actual publication times.
 
-## Required GitHub Actions secrets
+## Required secret
 
-Open **Settings → Secrets and variables → Actions → New repository secret** and add:
+Open **Settings → Secrets and variables → Actions → New repository secret** and ensure this secret exists:
 
-1. `FACEBOOK_PAGE_ID` — the numeric ID of the Facebook Page.
-2. `FACEBOOK_PAGE_ACCESS_TOKEN` — a Page access token for a person with the Page's **CREATE_CONTENT** task and the required permissions: `pages_manage_posts`, `pages_read_engagement`, and `pages_show_list`.
+- `BUFFER_API_KEY` — your Buffer API key.
 
-Do not put tokens in code, commits, issues, or chat. If a token is exposed, revoke it and create a new one.
+Do not put tokens in code, commits, issues, or chat. If an API key was exposed, revoke it and create a new one.
 
-Meta's Page Videos endpoint is `/{page_id}/videos`. Meta documents that publishing requires a Page access token and the permissions listed above:
-https://developers.facebook.com/docs/graph-api/reference/page/videos
+The workflow uses GitHub's built-in `GITHUB_TOKEN` to create public Release assets; no Facebook Page ID or Facebook access token is required. It discovers the connected Facebook channel through Buffer. If multiple active Facebook Pages are connected, the script stops rather than choosing the wrong Page.
 
-## Run and verify
+## Verify
 
-1. Add both secrets.
-2. Open the repository's **Actions** tab.
-3. Select **Sports Lover Agent - 10 Daily Native Videos**.
-4. Press **Run workflow**.
-5. Open the run logs. A successful upload prints `Facebook confirmed native video upload` with the returned video ID.
-6. Check the Facebook Page's Videos/Reels area to confirm it is visible.
+1. Open the repository's **Actions** tab.
+2. Select **Sports Lover Agent - Buffer Native Videos**.
+3. Press **Run workflow**.
+4. Open the latest run and inspect the logs.
+5. A successful queue step prints `Buffer confirmed native video post queued` with a Buffer post ID.
+6. Open Buffer and check the Facebook Page queue. After the scheduled time, check the Facebook Page/Reels area to confirm publication.
 
-The schedule attempts one upload every two hours. GitHub scheduled workflows can be delayed, so exact posting times are not guaranteed.
+A Buffer queue confirmation means Buffer accepted the post; it does not prove Facebook has published it yet. Check the Buffer post status for the final result.
 
-## Source and copyright
+## Media hosting and copyright
 
-The system uses sports RSS headlines as source material for original text-based video cards. It does not download or repost broadcast footage or third-party match highlights. A source link is included in the Facebook description for context.
+Buffer's API does not accept direct binary media uploads. It fetches videos from public URLs, and those URLs must remain reachable until the scheduled post publishes. This agent stores each MP4 as a public GitHub Release asset so Buffer can fetch it later.
+
+The video cards are original designs based on sports headlines and summaries. The agent does not download or repost broadcast footage or third-party match highlights. Each post includes its source link.
 
 ## Main files
 
 - `scripts/collect_github.py` — sports RSS collection and deduplication.
-- `scripts/create_and_upload.py` — renders a vertical MP4 and uploads it to the Facebook Page.
+- `scripts/create_and_upload.py` — renders MP4, hosts it in GitHub Releases, and queues it through Buffer.
 - `.github/workflows/sports-agent.yml` — scheduled/manual automation.
 - `data/pending_posts.json` — collected sports stories.
-- `data/video_upload_history.json` — successful upload history and daily-limit tracking.
+- `data/video_upload_history.json` — successful Buffer queue history and daily-limit tracking.

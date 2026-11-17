@@ -26,11 +26,40 @@ def buffer_request(query, variables, api_key):
         raise RuntimeError("; ".join(e.get("message", "GraphQL error") for e in result["errors"]))
     return result.get("data") or {}
 
+def find_facebook_channel(api_key):
+    org_data = buffer_request(
+        "query { account { organizations { id name } } }", {}, api_key
+    )
+    organizations = (org_data.get("account") or {}).get("organizations") or []
+    matches = []
+    channel_query = """
+    query GetChannels($organizationId: OrganizationId!) {
+      channels(input: { organizationId: $organizationId }) {
+        id name displayName service descriptor isDisconnected isLocked
+      }
+    }
+    """
+    for org in organizations:
+        data = buffer_request(channel_query, {"organizationId": org["id"]}, api_key)
+        for channel in data.get("channels") or []:
+            service = (channel.get("service") or "").lower()
+            descriptor = (channel.get("descriptor") or "").lower()
+            if ("facebook" in service or "facebook" in descriptor) and not channel.get("isDisconnected") and not channel.get("isLocked"):
+                matches.append((org.get("name", ""), channel))
+    if len(matches) == 1:
+        org_name, channel = matches[0]
+        print("Using Facebook channel: " + str(channel.get("displayName") or channel.get("name") or channel.get("descriptor")) + " (" + org_name + ")")
+        return channel["id"]
+    if not matches:
+        raise SystemExit("No active Facebook Page channel found. Connect your Facebook Page in Buffer.")
+    names = [str(ch.get("displayName") or ch.get("name") or ch.get("descriptor")) for _, ch in matches]
+    raise SystemExit("Multiple Facebook Pages found in Buffer: " + ", ".join(names) + ". Leave only the intended Page connected to this Buffer organization.")
+
 def main():
     api_key = os.getenv("BUFFER_API_KEY", "").strip()
-    channel_id = os.getenv("BUFFER_CHANNEL_ID", "").strip()
-    if not api_key or not channel_id:
-        raise SystemExit("Missing BUFFER_API_KEY or BUFFER_CHANNEL_ID GitHub Actions secret.")
+    if not api_key:
+        raise SystemExit("Missing BUFFER_API_KEY GitHub Actions secret.")
+    channel_id = find_facebook_channel(api_key)
 
     posts = json.loads(PENDING.read_text(encoding="utf-8")) if PENDING.exists() else []
     published = set(json.loads(PUBLISHED.read_text(encoding="utf-8"))) if PUBLISHED.exists() else []

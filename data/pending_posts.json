@@ -48,18 +48,6 @@
     "status": "pending"
   },
   {
-    "title": "Haaland helps Norway to win over Wales in Nations League",
-    "url": "https://www.bbc.co.uk/sport/football/videos/cr20vgxv43p8o?at_medium=RSS&at_campaign=rss",
-    "summary": "Watch the best of the action as Norway beat Wales in the Nations League in Oslo.",
-    "category": "football",
-    "content_type": "video",
-    "source": "BBC Sport",
-    "published_at": "2026-11-14T19:23:13+00:00",
-    "collected_at": "2026-11-17T19:19:18.681056+00:00",
-    "trend_score": 3.0,
-    "status": "pending"
-  },
-  {
     "title": "Khawaja: I made a promise to Warner in 2020",
     "url": "https://www.cricinfo.com/ci/content/story/1562823.html?ex_cid=OTC-RSS",
     "summary": "In podcast recorded before Pat Cummins' press conference, Khawaja conceded there could be a \"cost\" to others",
@@ -93,6 +81,18 @@
     "published_at": "2026-11-17T18:56:27+00:00",
     "collected_at": "2026-11-17T19:19:18.681056+00:00",
     "trend_score": 1.99,
+    "status": "pending"
+  },
+  {
+    "title": "Millwall open disciplinary proceedings against Baker",
+    "url": "https://www.bbc.co.uk/sport/football/articles/c6m2lelll4n1o?at_medium=RSS&at_campaign=rss",
+    "summary": "Millwall are undertaking disciplinary proceedings against forward Benicio Baker, BBC Sport understands.",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-17T20:00:52+00:00",
+    "collected_at": "2026-11-17T20:51:15.248684+00:00",
+    "trend_score": 1.98,
     "status": "pending"
   },
   {

@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Query
+import httpx
 
 from app import database
 from app.agents.runner import run_ingestion

@@ -1,1 +1,1 @@
-# Add one approved post URL per line, then run the Publish Approved Sports Links workflow.\n
+# Add one approved post URL per line. Then run the Publish Approved Sports Links workflow.

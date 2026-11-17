@@ -11,6 +11,7 @@ PUBLISHED = DATA / "published_urls.json"
 ENDPOINT = "https://api.buffer.com"
 MAX_PER_RUN = 3
 
+
 def buffer_request(query, variables, api_key):
     payload = json.dumps({"query": query, "variables": variables}).encode()
     request = Request(ENDPOINT, data=payload, headers={
@@ -25,6 +26,7 @@ def buffer_request(query, variables, api_key):
     if result.get("errors"):
         raise RuntimeError("; ".join(e.get("message", "GraphQL error") for e in result["errors"]))
     return result.get("data") or {}
+
 
 def find_facebook_channel(api_key):
     org_data = buffer_request(
@@ -55,6 +57,7 @@ def find_facebook_channel(api_key):
     names = [str(ch.get("displayName") or ch.get("name") or ch.get("descriptor")) for _, ch in matches]
     raise SystemExit("Multiple Facebook Pages found in Buffer: " + ", ".join(names) + ". Leave only the intended Page connected to this Buffer organization.")
 
+
 def main():
     api_key = os.getenv("BUFFER_API_KEY", "").strip()
     if not api_key:
@@ -63,11 +66,12 @@ def main():
 
     posts = json.loads(PENDING.read_text(encoding="utf-8")) if PENDING.exists() else []
     published = set(json.loads(PUBLISHED.read_text(encoding="utf-8"))) if PUBLISHED.exists() else []
-    # Only take the newest three not-yet-queued links. Older backlog is left untouched.
+
+    # Test video links first; this creates link posts, not native video uploads.
     candidates = []
     for item in reversed(posts):
         url = item.get("url")
-        if url and url not in published:
+        if item.get("content_type") == "video" and url and url not in published:
             candidates.append(item)
         if len(candidates) >= MAX_PER_RUN:
             break
@@ -84,7 +88,7 @@ def main():
     for item in candidates:
         url = item["url"]
         data = buffer_request(mutation, {"input": {
-            "text": item.get("title", "Sports update"),
+            "text": item.get("title", "Sports video"),
             "channelId": channel_id,
             "schedulingType": "automatic",
             "mode": "addToQueue",
@@ -101,8 +105,9 @@ def main():
         published.add(url)
         PUBLISHED.write_text(json.dumps(sorted(published), indent=2) + "\n", encoding="utf-8")
         count += 1
-        print(f"Queued in Buffer: {item.get('title', url)} (post ID: {result['post'].get('id')})")
-    print(f"New links added to Buffer queue: {count}")
+        print(f"Queued video link in Buffer: {item.get('title', url)} (post ID: {result['post'].get('id')})")
+    print(f"New video links added to Buffer queue: {count}")
+
 
 if __name__ == "__main__":
     main()

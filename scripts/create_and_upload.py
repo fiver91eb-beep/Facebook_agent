@@ -204,6 +204,7 @@ def queue_video_in_buffer(item, video_url, channel_id, api_key):
         "channelId": channel_id,
         "schedulingType": "automatic",
         "mode": "addToQueue",
+        "metadata": {"facebook": {"type": "reel"}},
         "assets": [{"video": {"url": video_url}}],
     }}, api_key)
     result = data.get("createPost") or {}

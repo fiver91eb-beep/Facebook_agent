@@ -1,12 +1,6 @@
 name: Sports Lover Agent - Buffer Native Videos
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/sports-agent.yml"
-      - "scripts/create_and_upload.py"
-      - "scripts/collect_github.py"
   workflow_dispatch:
 
 permissions:

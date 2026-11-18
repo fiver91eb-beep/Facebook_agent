@@ -48,6 +48,18 @@
     "status": "pending"
   },
   {
+    "title": "The 3pm football blackout: outdated or still relevant in 2026?",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cwvg2mxkd4x8o?at_medium=RSS&at_campaign=rss",
+    "summary": "After 60 years, is time finally running out on the 3pm blackout in football?",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T06:27:11+00:00",
+    "collected_at": "2026-11-18T07:35:19.735350+00:00",
+    "trend_score": 3.47,
+    "status": "pending"
+  },
+  {
     "title": "FA wants to host Nations League finals in England",
     "url": "https://www.bbc.co.uk/sport/football/articles/c5742x4xldmpo?at_medium=RSS&at_campaign=rss",
     "summary": "England could host the Nations League finals this season after Football Association officials register their interest.",
@@ -81,6 +93,18 @@
     "published_at": "2026-11-15T17:10:22+00:00",
     "collected_at": "2026-11-17T19:19:18.681056+00:00",
     "trend_score": 2.11,
+    "status": "pending"
+  },
+  {
+    "title": "Duckett delivers hundred down under to power England to 328",
+    "url": "https://www.cricinfo.com/ci/content/story/1563045.html?ex_cid=OTC-RSS",
+    "summary": "Duckett made 133 from 115 and Jacks made 59 as England were bowled out for 328 with nine balls to spare, with Edwards taking four wickets and Renshaw three",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-18T07:30:49+00:00",
+    "collected_at": "2026-11-18T07:35:19.735350+00:00",
+    "trend_score": 2.0,
     "status": "pending"
   },
   {
@@ -120,6 +144,30 @@
     "status": "pending"
   },
   {
+    "title": "From one of Ajax's future stars to quitting football for music",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cmly053x643ro?at_medium=RSS&at_campaign=rss",
+    "summary": "Former Ajax academy player Elikia Mbinga tells BBC Sport how he swapped football for music after playing with some Premier League stars.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T07:02:42+00:00",
+    "collected_at": "2026-11-18T07:35:19.735350+00:00",
+    "trend_score": 1.98,
+    "status": "pending"
+  },
+  {
+    "title": "Who am I? Plus today's other quizzes",
+    "url": "https://www.bbc.co.uk/sport/football/articles/c6ly5dq07wk5o?at_medium=RSS&at_campaign=rss",
+    "summary": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T06:56:12+00:00",
+    "collected_at": "2026-11-18T07:35:19.735350+00:00",
+    "trend_score": 1.98,
+    "status": "pending"
+  },
+  {
     "title": "Millwall open disciplinary proceedings against Baker",
     "url": "https://www.bbc.co.uk/sport/football/articles/c6m2lelll4n1o?at_medium=RSS&at_campaign=rss",
     "summary": "Millwall are undertaking disciplinary proceedings against forward Benicio Baker, BBC Sport understands.",
@@ -129,6 +177,18 @@
     "published_at": "2026-11-17T20:00:52+00:00",
     "collected_at": "2026-11-17T20:51:15.248684+00:00",
     "trend_score": 1.98,
+    "status": "pending"
+  },
+  {
+    "title": "New Zealand 'trying to be a little bit fluid' with fast bowlers' workloads",
+    "url": "https://www.cricinfo.com/ci/content/story/1563034.html?ex_cid=OTC-RSS",
+    "summary": "New Zealand have ten Tests lined up in quick succession, and captain Tom Latham hopes to look back at the end of it \"and say we had a pretty good time\"",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-18T06:20:36+00:00",
+    "collected_at": "2026-11-18T07:35:19.735350+00:00",
+    "trend_score": 1.97,
     "status": "pending"
   },
   {

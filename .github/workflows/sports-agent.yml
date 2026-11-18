@@ -8,8 +8,6 @@ on:
       - "scripts/create_and_upload.py"
       - "scripts/collect_github.py"
   workflow_dispatch:
-  schedule:
-    - cron: "0 */4 * * *"
 
 permissions:
   contents: write

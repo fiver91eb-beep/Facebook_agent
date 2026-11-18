@@ -118,7 +118,7 @@ def queue_post(item, video_url, channel_id, api_key):
       }
     }"""
     data = buffer_request(mutation, {"input": {
-        "text": caption + "\\n\\n#TurkishDrama #FeelOne #DramaShorts",
+        "text": caption + "\n\n#TurkishDrama #FeelOne #DramaShorts",
         "channelId": channel_id, "schedulingType": "automatic", "mode": "addToQueue",
         "metadata": {"facebook": {"type": "reel"}},
         "assets": [{"video": {"url": video_url}}],
@@ -178,7 +178,7 @@ def main():
                             "buffer_post_id": post.get("id"),
                             "queued_at": datetime.now(timezone.utc).isoformat(),
                             "status": "queued_in_buffer"})
-            HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+            HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             queued += 1
             print(f"Buffer confirmed Feel One video queued: {post.get('id')} | {item['title']}")
         finally:

@@ -2,6 +2,8 @@ name: Sports Lover Agent - Buffer Native Videos
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 */4 * * *"
 
 permissions:
   contents: write

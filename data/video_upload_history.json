@@ -7,5 +7,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261117/sports-2026-11-17-05e6cd54068b.mp4",
     "queued_at": "2026-11-17T12:16:08.642052+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/cmwy8p49xp25o?at_medium=RSS&at_campaign=rss",
+    "title": "Highlights: Ten-man Portugal beat Wales to top group",
+    "category": "football",
+    "trend_score": 6.41,
+    "buffer_post_id": "6afd354afc933ac285c7c9a9",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261118/sports-2026-11-18-da40d15f2a9f.mp4",
+    "queued_at": "2026-11-18T05:19:06.577210+00:00",
+    "status": "queued_in_buffer"
   }
 ]

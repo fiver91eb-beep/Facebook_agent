@@ -240,6 +240,18 @@
     "status": "pending"
   },
   {
+    "title": "72+: The EFL Podcast",
+    "url": "https://www.bbc.co.uk/sounds/play/p0pnnkrh?at_medium=RSS&at_campaign=rss",
+    "summary": "Aaron, Jobi and Tommy Smith talk all things EFL.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T16:15:00+00:00",
+    "collected_at": "2026-11-18T17:08:14.035243+00:00",
+    "trend_score": 1.98,
+    "status": "pending"
+  },
+  {
     "title": "Green suffers concussion as Peake steps up as substitute",
     "url": "https://www.cricinfo.com/ci/content/story/1563100.html?ex_cid=OTC-RSS",
     "summary": "Atkinson draws blood with short ball en route to comprehensive victory at Hobart",
@@ -297,6 +309,30 @@
     "published_at": "2026-11-17T20:00:52+00:00",
     "collected_at": "2026-11-17T20:51:15.248684+00:00",
     "trend_score": 1.98,
+    "status": "pending"
+  },
+  {
+    "title": "The sandpaper plot - who was there, who said what?",
+    "url": "https://www.bbc.co.uk/sport/cricket/articles/cqwy41w3zydgo?at_medium=RSS&at_campaign=rss",
+    "summary": "As Cameron Bancroft's explosive allegations raise more questions about the sandpaper scandal, BBC Sport looks at who was there and what they have said since.",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T16:13:04+00:00",
+    "collected_at": "2026-11-18T17:08:14.035243+00:00",
+    "trend_score": 1.97,
+    "status": "pending"
+  },
+  {
+    "title": "The tightest survival scrap for years? Why it's not too early to worry",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cj3vgp36z063o?at_medium=RSS&at_campaign=rss",
+    "summary": "The Premier League resumes on Saturday with Crystal Palace, Sunderland and Man Utd in the relegation zone. But is it too early to be worried?",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T16:09:55+00:00",
+    "collected_at": "2026-11-18T17:08:14.035243+00:00",
+    "trend_score": 1.97,
     "status": "pending"
   },
   {
@@ -504,6 +540,18 @@
     "status": "pending"
   },
   {
+    "title": "The key takeaways from Cameron Bancroft's revelations about sandpapergate",
+    "url": "https://www.cricinfo.com/ci/content/story/1563115.html?ex_cid=OTC-RSS",
+    "summary": "Who knew what? Who objected? And had Australia done it before they were caught?",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-18T14:14:14+00:00",
+    "collected_at": "2026-11-18T17:08:14.035243+00:00",
+    "trend_score": 1.92,
+    "status": "pending"
+  },
+  {
     "title": "NI will carry momentum into Euro 2028 qualifiers",
     "url": "https://www.bbc.co.uk/sport/football/articles/ck9q8jg1l45do?at_medium=RSS&at_campaign=rss",
     "summary": "Northern Ireland manager Michael O'Neill says his Nations League promotion winners will plot their next 12 months after the Euro 2028 qualifying draw in December.",
@@ -573,6 +621,18 @@
     "published_at": "2026-11-18T08:50:52+00:00",
     "collected_at": "2026-11-18T13:00:18.776637+00:00",
     "trend_score": 1.88,
+    "status": "pending"
+  },
+  {
+    "title": "Test Match Special Podcast",
+    "url": "https://www.bbc.co.uk/sounds/play/p0pnlrq2?at_medium=RSS&at_campaign=rss",
+    "summary": "Michael Vaughan reacts after England win and Cameron Bancroft breaks his silence.",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T12:24:00+00:00",
+    "collected_at": "2026-11-18T17:08:14.035243+00:00",
+    "trend_score": 1.87,
     "status": "pending"
   },
   {

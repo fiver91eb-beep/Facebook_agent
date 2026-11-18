@@ -144,18 +144,6 @@
     "status": "pending"
   },
   {
-    "title": "Bangladesh, USA to host men's and women's LA28 qualifying tournaments",
-    "url": "https://www.cricinfo.com/ci/content/story/1562785.html?ex_cid=OTC-RSS",
-    "summary": "The ICC has finalised the windows for marquee men's tournaments until 2035",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-15T17:10:22+00:00",
-    "collected_at": "2026-11-17T19:19:18.681056+00:00",
-    "trend_score": 2.11,
-    "status": "pending"
-  },
-  {
     "title": "Duckett delivers hundred down under to power England to 328",
     "url": "https://www.cricinfo.com/ci/content/story/1563045.html?ex_cid=OTC-RSS",
     "summary": "Duckett made 133 from 115 and Jacks made 59 as England were bowled out for 328 with nine balls to spare, with Edwards taking four wickets and Renshaw three",
@@ -165,6 +153,18 @@
     "published_at": "2026-11-18T07:30:49+00:00",
     "collected_at": "2026-11-18T07:35:19.735350+00:00",
     "trend_score": 2.0,
+    "status": "pending"
+  },
+  {
+    "title": "Paterson on Rabada: 'When you poke the bear, a different KG comes up'",
+    "url": "https://www.cricinfo.com/ci/content/story/1563137.html?ex_cid=OTC-RSS",
+    "summary": "Following a wicketless spell, Paterson found himself answering an unexpected question from his five-year-old son about why he can't bowl like Rabada",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-18T18:42:22+00:00",
+    "collected_at": "2026-11-18T19:14:09.262888+00:00",
+    "trend_score": 1.99,
     "status": "pending"
   },
   {
@@ -348,6 +348,18 @@
     "status": "pending"
   },
   {
+    "title": "Rooney revelations important - Bradford boss Duff",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cvrlgke13e9go?at_medium=RSS&at_campaign=rss",
+    "summary": "Bradford boss Michael Duff praises former England captain Wayne Rooney for speaking out about the mental health struggles he had while playing.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T17:52:23+00:00",
+    "collected_at": "2026-11-18T19:14:09.262888+00:00",
+    "trend_score": 1.96,
+    "status": "pending"
+  },
+  {
     "title": "Bancroft: 'I did not give a complete and truthful account'",
     "url": "https://www.cricinfo.com/ci/content/story/1563070.html?ex_cid=OTC-RSS",
     "summary": "In a 4000-word article first published in The West Australian, Cameron Bancroft admits withholding details during Australia's 2018 ball-tampering investigation",
@@ -465,6 +477,18 @@
     "published_at": "2026-11-17T17:33:41+00:00",
     "collected_at": "2026-11-17T19:19:18.681056+00:00",
     "trend_score": 1.95,
+    "status": "pending"
+  },
+  {
+    "title": "From Dunfermline to Dubai - McPake on new life in Middle East",
+    "url": "https://www.bbc.co.uk/sport/football/articles/c6j9m1ygw427o?at_medium=RSS&at_campaign=rss",
+    "summary": "James McPake has left Scottish football behind for the time being, plying his trade in coaching in Dubai.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-18T17:06:29+00:00",
+    "collected_at": "2026-11-18T19:14:09.262888+00:00",
+    "trend_score": 1.94,
     "status": "pending"
   },
   {

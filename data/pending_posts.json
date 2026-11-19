@@ -72,15 +72,15 @@
     "status": "pending"
   },
   {
-    "title": "Watch: Partick Thistle & Ross County stretch leads as Clyde hit six",
-    "url": "https://www.bbc.co.uk/sport/football/videos/cky8699zd79lo?at_medium=RSS&at_campaign=rss",
-    "summary": "Watch the best of the action from the weekend in the Scottish Professional Football league as Partick Thistle stretch their lead in the Championship, Ross County win their top-of-the table head-to-head in League 1 and Clyde hit six to keep pace with Stranraer in League 2.",
-    "category": "football",
-    "content_type": "video",
+    "title": "The best European strikers this century - ranked by you",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cw5y1ver2rpyo?at_medium=RSS&at_campaign=rss",
+    "summary": "BBC Sport reveals the top 10 European strikers this century, as voted for by you.",
+    "category": "cricket",
+    "content_type": "story",
     "source": "BBC Sport",
-    "published_at": "2026-11-16T08:02:51+00:00",
-    "collected_at": "2026-11-17T19:19:18.681056+00:00",
-    "trend_score": 4.02,
+    "published_at": "2026-11-19T08:50:01+00:00",
+    "collected_at": "2026-11-19T08:56:45.668385+00:00",
+    "trend_score": 3.5,
     "status": "pending"
   },
   {
@@ -420,6 +420,18 @@
     "status": "pending"
   },
   {
+    "title": "Mendis, Dinusha resist but Pakistan remain firmly on top",
+    "url": "https://www.cricinfo.com/ci/content/story/1563203.html?ex_cid=OTC-RSS",
+    "summary": "Pakistan picked up two wickets in the morning session, courtesy of Jamal and Razaullah with SL still trailing by 60 runs",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-19T07:55:19+00:00",
+    "collected_at": "2026-11-19T08:56:45.668385+00:00",
+    "trend_score": 1.97,
+    "status": "pending"
+  },
+  {
     "title": "Vote for the first BBC Men's Footballer of the Year",
     "url": "https://www.bbc.co.uk/sport/football/articles/c61wrqr7l1d8o?at_medium=RSS&at_campaign=rss",
     "summary": "Jude Bellingham, Harry Kane, Kylian Mbappe, Rodri and Lamine Yamal are shortlisted for the BBC's Men's Footballer of the Year award.",
@@ -465,6 +477,18 @@
     "published_at": "2026-11-18T06:20:36+00:00",
     "collected_at": "2026-11-18T07:35:19.735350+00:00",
     "trend_score": 1.97,
+    "status": "pending"
+  },
+  {
+    "title": "How Premier League's big six keep getting richer",
+    "url": "https://www.bbc.co.uk/sport/football/articles/c6x28e93zv3jo?at_medium=RSS&at_campaign=rss",
+    "summary": "Ten games into the Premier League season, and the top five places are dominated by big six clubs. It should come as no surprise as they have a growing advantage of hundreds of millions of pounds.",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-19T07:38:22+00:00",
+    "collected_at": "2026-11-19T08:56:45.668385+00:00",
+    "trend_score": 1.96,
     "status": "pending"
   },
   {

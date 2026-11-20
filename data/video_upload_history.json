@@ -47,5 +47,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261120/sports-2026-11-20-201ec093a5a9.mp4",
     "queued_at": "2026-11-20T04:54:42.489401+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/cjy5xkq5wwrgo?at_medium=RSS&at_campaign=rss",
+    "title": "Buurman rescues late Chelsea win against PSG",
+    "category": "football",
+    "trend_score": 4.92,
+    "buffer_post_id": "6b000b1dca85ebefb00d03ed",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261120/sports-2026-11-20-5feb0ac216d0.mp4",
+    "queued_at": "2026-11-20T08:55:57.706699+00:00",
+    "status": "queued_in_buffer"
   }
 ]

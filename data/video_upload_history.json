@@ -37,5 +37,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261119/sports-2026-11-19-abd642672c35.mp4",
     "queued_at": "2026-11-19T08:56:50.948039+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/c3dx1n4xp1xxo?at_medium=RSS&at_campaign=rss",
+    "title": "Lyon outclass Arsenal for Champions League win",
+    "category": "football",
+    "trend_score": 6.45,
+    "buffer_post_id": "6affd2927b0a126cebab01ef",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261120/sports-2026-11-20-201ec093a5a9.mp4",
+    "queued_at": "2026-11-20T04:54:42.489401+00:00",
+    "status": "queued_in_buffer"
   }
 ]

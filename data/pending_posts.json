@@ -684,18 +684,6 @@
     "status": "pending"
   },
   {
-    "title": "Cricket Australia sets up 'safe space' for players to share sandpapergate experiences",
-    "url": "https://www.bbc.co.uk/sport/cricket/articles/c58j48elrwvyo?at_medium=RSS&at_campaign=rss",
-    "summary": "The 2018 scandal has resurfaced this month after Usman Khawaja claimed the entire team knew about the cheating plot.",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-18T04:48:56+00:00",
-    "collected_at": "2026-11-18T05:18:59.474858+00:00",
-    "trend_score": 1.99,
-    "status": "pending"
-  },
-  {
     "title": "Osimhen keen on Man Utd move - Saturday's gossip",
     "url": "https://www.bbc.co.uk/sport/football/articles/c60qj1924wyeo?at_medium=RSS&at_campaign=rss",
     "summary": "Victor Osimhen is keen on a move to Manchester United, Aston Villa are interested in Amad Diallo and Ivan Toney is a target for Crystal Palace, plus more.",
@@ -849,6 +837,18 @@
     "published_at": "2026-11-18T06:56:12+00:00",
     "collected_at": "2026-11-18T07:35:19.735350+00:00",
     "trend_score": 1.98,
+    "status": "pending"
+  },
+  {
+    "title": "Cummins gets 'unanimous support' from Cricket Australia amid 2018 fallout",
+    "url": "https://www.cricinfo.com/ci/content/story/1563404.html?ex_cid=OTC-RSS",
+    "summary": "The Australia captain met with Todd Greenberg and David Boon on Friday and has said he is willing to be part of \"difficult conversations\"",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-21T03:55:09+00:00",
+    "collected_at": "2026-11-21T04:51:26.347324+00:00",
+    "trend_score": 1.97,
     "status": "pending"
   },
   {
@@ -1160,18 +1160,6 @@
     "source": "BBC Sport",
     "published_at": "2026-11-18T11:24:26+00:00",
     "collected_at": "2026-11-18T13:00:18.776637+00:00",
-    "trend_score": 1.96,
-    "status": "pending"
-  },
-  {
-    "title": "Unchanged England bat; Zampa out with back spasms for Australia",
-    "url": "https://www.cricinfo.com/ci/content/story/1563019.html?ex_cid=OTC-RSS",
-    "summary": "Mahli Beardman replaced Riley Meredith for the series decider in Hobart. Batter Alex Carey was also named in the XI",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-18T03:42:45+00:00",
-    "collected_at": "2026-11-18T05:18:59.474858+00:00",
     "trend_score": 1.96,
     "status": "pending"
   },

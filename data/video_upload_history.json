@@ -87,5 +87,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261122/sports-2026-11-22-f853fa27ecf3.mp4",
     "queued_at": "2026-11-22T04:53:24.475591+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/cmde1ll6pgj3o?at_medium=RSS&at_campaign=rss",
+    "title": "Keating stars as Liverpool hold high-flying Chelsea to goalless draw",
+    "category": "football",
+    "trend_score": 4.99,
+    "buffer_post_id": "6b02abd1846b0ee907707179",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261122/sports-2026-11-22-02f8fea97ef1.mp4",
+    "queued_at": "2026-11-22T08:46:10.029888+00:00",
+    "status": "queued_in_buffer"
   }
 ]

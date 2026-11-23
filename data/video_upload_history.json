@@ -97,5 +97,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261122/sports-2026-11-22-02f8fea97ef1.mp4",
     "queued_at": "2026-11-22T08:46:10.029888+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/cm0rkzzyl2ego?at_medium=RSS&at_campaign=rss",
+    "title": "Man Utd score dramatic late winner to extend record run",
+    "category": "football",
+    "trend_score": 7.97,
+    "buffer_post_id": "6b03caeccc364169c1b1472f",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261123/sports-2026-11-23-2147a51a0cb0.mp4",
+    "queued_at": "2026-11-23T05:11:09.031732+00:00",
+    "status": "queued_in_buffer"
   }
 ]

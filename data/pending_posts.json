@@ -12,6 +12,18 @@
     "status": "pending"
   },
   {
+    "title": "Watch highlights of the weekend's SPFL action",
+    "url": "https://www.bbc.co.uk/sport/football/videos/c6p3e4388lq1o?at_medium=RSS&at_campaign=rss",
+    "summary": "Watch the best of the action from the weekend's action in the Scottish Championship, League 1 and League 2.",
+    "category": "football",
+    "content_type": "video",
+    "source": "BBC Sport",
+    "published_at": "2026-11-23T08:14:17+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 6.26,
+    "status": "pending"
+  },
+  {
     "title": "'We lost two points' - Arteta on 'unacceptable' Newcastle draw",
     "url": "https://www.bbc.co.uk/sport/football/videos/ck1wrdd9ew11o?at_medium=RSS&at_campaign=rss",
     "summary": "Arsenal manager Mikel Arteta says his side squandered the chance to take all three points after their 2-2 draw against Newcastle United at St James' Park. The result sees the reigning Premier League champions go six points clear at the top of the table.",
@@ -224,18 +236,6 @@
     "source": "BBC Sport",
     "published_at": "2026-11-21T18:16:48+00:00",
     "collected_at": "2026-11-21T19:04:21.889165+00:00",
-    "trend_score": 4.98,
-    "status": "pending"
-  },
-  {
-    "title": "We want to have a positive impact - Pochettino",
-    "url": "https://www.bbc.co.uk/sport/football/videos/cw20xd2zgl0xo?at_medium=RSS&at_campaign=rss",
-    "summary": "Mauricio Pochettino talks for the first time about his arrival at Manchester United and what his goals are ahead of his first game.",
-    "category": "football",
-    "content_type": "video",
-    "source": "BBC Sport",
-    "published_at": "2026-11-20T16:01:53+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
     "trend_score": 4.98,
     "status": "pending"
   },
@@ -492,6 +492,18 @@
     "status": "pending"
   },
   {
+    "title": "Fernando, Wanuja help SL A stay unbeaten",
+    "url": "https://www.cricinfo.com/ci/content/story/1563717.html?ex_cid=OTC-RSS",
+    "summary": "They beat Bangladesh by seven wickets, chasing 146 with nearly 30 overs to spare to enter the semi-finals unbeaten",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-23T15:55:28+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 3.47,
+    "status": "pending"
+  },
+  {
     "title": "Morocco and Senegal await Afcon final verdict after court case",
     "url": "https://www.bbc.co.uk/sport/football/articles/ckjw5jj2l26lo?at_medium=RSS&at_campaign=rss",
     "summary": "The Court of Arbitration for Sport is set to rule on the decision to strip Senegal of the Afcon 2025 title.",
@@ -525,6 +537,18 @@
     "published_at": "2026-11-21T06:13:20+00:00",
     "collected_at": "2026-11-21T07:28:22.795257+00:00",
     "trend_score": 3.47,
+    "status": "pending"
+  },
+  {
+    "title": "Maritz and Murray star as Ireland seal final berth",
+    "url": "https://www.bbc.co.uk/sport/cricket/articles/c3j4r2w48znno?at_medium=RSS&at_campaign=rss",
+    "summary": "Ireland are through to the final of the Emerging Nations Trophy in Ajman thanks to a 44-run victory over the Netherlands.",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-23T15:28:05+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 3.46,
     "status": "pending"
   },
   {
@@ -696,6 +720,42 @@
     "status": "pending"
   },
   {
+    "title": "South Africa dominate after bowling Bangladesh out for 91",
+    "url": "https://www.cricinfo.com/ci/content/story/1563706.html?ex_cid=OTC-RSS",
+    "summary": "SA's three quicks shared eight wickets before their top-order batters gave them further control",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-23T16:42:46+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.99,
+    "status": "pending"
+  },
+  {
+    "title": "'No-one's coming to save us' - but how can Man Utd save themselves?",
+    "url": "https://www.bbc.co.uk/sport/football/articles/ck9d7qxxl7w8o?at_medium=RSS&at_campaign=rss",
+    "summary": "How does Mauricio Pochettino halt Manchester United's desperate slide towards the foot of the Premier League",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-23T16:30:59+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.99,
+    "status": "pending"
+  },
+  {
+    "title": "When is the Euro 2028 qualifying draw?",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cklye3q3jvnwo?at_medium=RSS&at_campaign=rss",
+    "summary": "Our Ask Me Anything team tell you all you need to know about the Euro 2028 qualifying draw.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-23T16:25:50+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.99,
+    "status": "pending"
+  },
+  {
     "title": "Watford set to appoint former Romania boss Iordanescu",
     "url": "https://www.bbc.co.uk/sport/football/articles/cj7523r0vrp0o?at_medium=RSS&at_campaign=rss",
     "summary": "Watford are set to appoint former Romania coach Edward Iordanescu as their new head coach, reports BBC Three Counties Radio.",
@@ -840,39 +900,15 @@
     "status": "pending"
   },
   {
-    "title": "Prince, Rana rout Nepal for 26 after Tilak, Kushagra tons",
-    "url": "https://www.cricinfo.com/ci/content/story/1563375.html?ex_cid=OTC-RSS",
-    "summary": "Nepal, who were missing a few key players due to the ongoing Nepal Premier League, fell to the fifth-lowest List A total of all time",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-20T16:42:48+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.99,
-    "status": "pending"
-  },
-  {
-    "title": "Mowbray support no surprise, says interim boss Johnson",
-    "url": "https://www.bbc.co.uk/sport/football/articles/c5m2lnp387kmo?at_medium=RSS&at_campaign=rss",
-    "summary": "Blackburn Rovers interim boss Damien Johnson says the support shown for head coach Tony Mowbray shows the high regard he is held in.",
+    "title": "Hibs boss Reedijk rejects talk of Easter Road jinx",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cr78274gepz0o?at_medium=RSS&at_campaign=rss",
+    "summary": "Hibernian manager Marink Reedijk rejects suggestions Easter Road is jinxed after going seven months without a home win in the Premiership.",
     "category": "football",
     "content_type": "story",
     "source": "BBC Sport",
-    "published_at": "2026-11-20T16:27:19+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.99,
-    "status": "pending"
-  },
-  {
-    "title": "Man Utd fan criticism has gone too far at times - Berrada",
-    "url": "https://www.bbc.co.uk/sport/football/articles/cwz0k32j9kr9o?at_medium=RSS&at_campaign=rss",
-    "summary": "Manchester United chief executive Omar Berrada says some of the recent criticism of the club's hierarchy has \"crossed a line\".",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-20T16:24:46+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.99,
+    "published_at": "2026-11-23T16:17:17+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.98,
     "status": "pending"
   },
   {
@@ -1056,6 +1092,18 @@
     "status": "pending"
   },
   {
+    "title": "Peshawar added as PSL's sixth venue, set to host 2027 opener",
+    "url": "https://www.cricinfo.com/ci/content/story/1563712.html?ex_cid=OTC-RSS",
+    "summary": "The stadium will also revert to its historic name, Arbab Niaz Stadium, having previously been known as Imran Khan Cricket Stadium",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-23T15:42:20+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.97,
+    "status": "pending"
+  },
+  {
     "title": "Smith, Konstas frustrated as New South Wales struggle",
     "url": "https://www.cricinfo.com/ci/content/story/1563654.html?ex_cid=OTC-RSS",
     "summary": "Mitchell Swepson and Michael Neser took five wickets between them to put Queensland in sight of a first-innings lead",
@@ -1224,15 +1272,39 @@
     "status": "pending"
   },
   {
-    "title": "10 games, 0 points & 30 goals conceded - why Charlton are struggling",
-    "url": "https://www.bbc.co.uk/sport/football/articles/cq0k0kxg5k4zo?at_medium=RSS&at_campaign=rss",
-    "summary": "BBC Sport looks at why promoted Charlton Athletic have had one of the worst starts in Women's Super League history.",
+    "title": "I've wanted to crawl under a rock and hide - Pressley",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cre3d9j5k4n8o?at_medium=RSS&at_campaign=rss",
+    "summary": "Steven Pressley says he felt embarrassed by Dundee's 8-0 \"humiliation\" by Hearts and that there is a \"fragility\" in his squad.",
     "category": "football",
     "content_type": "story",
     "source": "BBC Sport",
-    "published_at": "2026-11-20T16:00:04+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.97,
+    "published_at": "2026-11-23T15:31:57+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.96,
+    "status": "pending"
+  },
+  {
+    "title": "IFA 'positive' over upgrades needed for World Cup",
+    "url": "https://www.bbc.co.uk/sport/football/articles/crgqx3472depo?at_medium=RSS&at_campaign=rss",
+    "summary": "The Irish Football Association's director of women's football Angela Platt says they are \"still working through\" plans with the Northern Ireland government to ensure there is funding available to make the necessary upgrades to Windsor Park in time for the 2035 World Cup.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-23T15:26:23+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.96,
+    "status": "pending"
+  },
+  {
+    "title": "Raya to miss Dortmund game but injury 'not serious'",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cjx2rqpr7l9lo?at_medium=RSS&at_campaign=rss",
+    "summary": "Arsenal goalkeeper David Raya will miss Tuesday's Champions League game against Borussia Dortmund but his shoulder injury will not require an operation.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-23T15:23:09+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.96,
     "status": "pending"
   },
   {
@@ -1392,18 +1464,6 @@
     "status": "pending"
   },
   {
-    "title": "Why injured Joao Pedro may be Chelsea's most important player",
-    "url": "https://www.bbc.co.uk/sport/football/articles/cr62p7x23vg3o?at_medium=RSS&at_campaign=rss",
-    "summary": "With Joao Pedro missing again for Chelsea on Saturday, BBC Sport looks at the importance of the Brazilian to the Blues.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-20T15:18:42+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.96,
-    "status": "pending"
-  },
-  {
     "title": "Football Daily",
     "url": "https://www.bbc.co.uk/sounds/play/p0ppcw2v?at_medium=RSS&at_campaign=rss",
     "summary": "Dale Johnson & Umir Irfan join Rick & Lloyd after Man Utd’s 4-0 defeat at Liverpool.",
@@ -1448,18 +1508,6 @@
     "source": "BBC Sport",
     "published_at": "2026-11-20T23:18:16+00:00",
     "collected_at": "2026-11-21T00:56:49.263456+00:00",
-    "trend_score": 1.95,
-    "status": "pending"
-  },
-  {
-    "title": "Filming training by drones should be illegal - Iraola",
-    "url": "https://www.bbc.co.uk/sport/football/articles/cqdr1xmekmg5o?at_medium=RSS&at_campaign=rss",
-    "summary": "Liverpool head coach Andoni Iraola says filming with drones around training grounds should be illegal.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-20T15:08:51+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
     "trend_score": 1.95,
     "status": "pending"
   },
@@ -1536,15 +1584,15 @@
     "status": "pending"
   },
   {
-    "title": "Celtic's Baur out for 10 weeks, says O'Neill",
-    "url": "https://www.bbc.co.uk/sport/football/articles/cvrlgx1l4lnlo?at_medium=RSS&at_campaign=rss",
-    "summary": "Germany midfielder Mika Baur will be out for around 10 weeks with ankle ligament damage, Celtic manager Martin O'Neill says.",
-    "category": "football",
+    "title": "England's tearaway quick bowler reinvented as a top-order batter",
+    "url": "https://www.bbc.co.uk/sport/cricket/articles/cqlym8r7jvd5o?at_medium=RSS&at_campaign=rss",
+    "summary": "Katie George was once a tearaway fast bowler but, after years of injury pain, tells BBC Sport about reinventing herself as a top-order batter.",
+    "category": "cricket",
     "content_type": "story",
     "source": "BBC Sport",
-    "published_at": "2026-11-20T14:47:54+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.94,
+    "published_at": "2026-11-23T14:26:27+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.93,
     "status": "pending"
   },
   {
@@ -1560,15 +1608,27 @@
     "status": "pending"
   },
   {
-    "title": "Football Daily",
-    "url": "https://www.bbc.co.uk/sounds/play/m003471n?at_medium=RSS&at_campaign=rss",
-    "summary": "The team look at Mauricio Pochettino's opening match as Manchester United head coach",
-    "category": "football",
+    "title": "Scotland finish with emphatic win over Zimbabwe",
+    "url": "https://www.bbc.co.uk/sport/cricket/articles/cwj059yenyr0o?at_medium=RSS&at_campaign=rss",
+    "summary": "Scotland Women cruise to a 74-run win over Zimbabwe to secure third place in the second edition of the Emerging Nations Trophy.",
+    "category": "cricket",
     "content_type": "story",
     "source": "BBC Sport",
-    "published_at": "2026-11-20T16:53:00+00:00",
-    "collected_at": "2026-11-20T19:18:07.650099+00:00",
-    "trend_score": 1.93,
+    "published_at": "2026-11-23T13:54:39+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.92,
+    "status": "pending"
+  },
+  {
+    "title": "Hampshire bowler Currie signs new deal to 2029",
+    "url": "https://www.bbc.co.uk/sport/cricket/articles/cr86810jwx80o?at_medium=RSS&at_campaign=rss",
+    "summary": "Hampshire pace bowler Scott Currie signs a new deal at the club that will extend his stay until 2029.",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-23T13:53:43+00:00",
+    "collected_at": "2026-11-23T16:56:53.436502+00:00",
+    "trend_score": 1.92,
     "status": "pending"
   },
   {
@@ -1632,66 +1692,6 @@
     "status": "pending"
   },
   {
-    "title": "SFA should not change to pander to clubs - McLeish",
-    "url": "https://www.bbc.co.uk/sport/football/articles/crjeqv4353e7o?at_medium=RSS&at_campaign=rss",
-    "summary": "St Mirren manager Craig McLeish says it's \"damning\" that Scottish FA chief football officer Craig Mulholland should have to \"pander to clubs\" as he attempts to bring in reforms.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-20T14:09:07+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.92,
-    "status": "pending"
-  },
-  {
-    "title": "Arteta warns Arsenal players over FPL team news leak",
-    "url": "https://www.bbc.co.uk/sport/football/articles/ck62pz5r16pro?at_medium=RSS&at_campaign=rss",
-    "summary": "Mikel Arteta says his Arsenal players have been warned against inadvertently leaking team news via Fantasy Premier League.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-20T14:08:55+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.92,
-    "status": "pending"
-  },
-  {
-    "title": "Injured Hasan Mahmud ruled out of South Africa tour",
-    "url": "https://www.cricinfo.com/ci/content/story/1563369.html?ex_cid=OTC-RSS",
-    "summary": "Bangladesh have not named a replacement yet and could bring left-arm quick Shoriful Islam into the XI for the second Test against South Africa",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-20T14:03:18+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.92,
-    "status": "pending"
-  },
-  {
-    "title": "Key questions as Scottish Premiership returns",
-    "url": "https://www.bbc.co.uk/sport/football/articles/c50mdwnn90jyo?at_medium=RSS&at_campaign=rss",
-    "summary": "The Scottish Premiership returns with managers to the fore - this is all you need to know about Saturday's games.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-20T13:53:22+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.92,
-    "status": "pending"
-  },
-  {
-    "title": "Legendary Irish League manager Coyle dies aged 80",
-    "url": "https://www.bbc.co.uk/sport/articles/c63eg4x112wqo?at_medium=RSS&at_campaign=rss",
-    "summary": "The Irish League's most successful manager Roy Coyle dies at the age of 80.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-20T13:52:15+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
-    "trend_score": 1.92,
-    "status": "pending"
-  },
-  {
     "title": "Fifa to confirm UK as host for 2035 Women's World Cup",
     "url": "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo?at_medium=RSS&at_campaign=rss",
     "summary": "Fifa is set to confirm on Monday that a first football World Cup will be hosted in the United Kingdom since 1966.",
@@ -1724,18 +1724,6 @@
     "source": "Cricket news from Cricinfo.com",
     "published_at": "2026-11-22T13:35:59+00:00",
     "collected_at": "2026-11-22T16:39:42.814754+00:00",
-    "trend_score": 1.91,
-    "status": "pending"
-  },
-  {
-    "title": "'You've got to take the emotion out of it': Conrad on Maharaj's omission",
-    "url": "https://www.cricinfo.com/ci/content/story/1563365.html?ex_cid=OTC-RSS",
-    "summary": "With Harmer on a roll, Maharaj has been left out of South Africa's last three Tests and is certain to miss the next one, too",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-20T13:46:56+00:00",
-    "collected_at": "2026-11-20T16:54:31.015466+00:00",
     "trend_score": 1.91,
     "status": "pending"
   },

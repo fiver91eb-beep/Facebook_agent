@@ -127,5 +127,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261124/sports-2026-11-24-afa5864df653.mp4",
     "queued_at": "2026-11-24T04:59:37.422250+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/rugby-union/articles/ckr5gdpm1q5no?at_medium=RSS&at_campaign=rss",
+    "title": "England won't get carried away by All Blacks win",
+    "category": "cricket",
+    "trend_score": 4.99,
+    "buffer_post_id": "6b0551752acbde8befbb8d7a",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261124/sports-2026-11-24-700446eda2af.mp4",
+    "queued_at": "2026-11-24T08:57:25.204830+00:00",
+    "status": "queued_in_buffer"
   }
 ]

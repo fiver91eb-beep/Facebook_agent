@@ -117,5 +117,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261124/sports-2026-11-24-b1c12cb4a3ef.mp4",
     "queued_at": "2026-11-23T20:47:34.601132+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/c5gm3jlw7l7xo?at_medium=RSS&at_campaign=rss",
+    "title": "Janelt scores stunner as Brentford beat 10-man Everton",
+    "category": "football",
+    "trend_score": 6.43,
+    "buffer_post_id": "6b0519b9c43c1f2f5c8c5672",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261124/sports-2026-11-24-afa5864df653.mp4",
+    "queued_at": "2026-11-24T04:59:37.422250+00:00",
+    "status": "queued_in_buffer"
   }
 ]

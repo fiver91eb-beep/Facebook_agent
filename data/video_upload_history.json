@@ -137,5 +137,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261124/sports-2026-11-24-700446eda2af.mp4",
     "queued_at": "2026-11-24T08:57:25.204830+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/cricket/articles/c6y9709xx4qwo?at_medium=RSS&at_campaign=rss",
+    "title": "Sooryavanshi, 15, breaks sixes record after scoring 204 off 53 balls",
+    "category": "cricket",
+    "trend_score": 6.49,
+    "buffer_post_id": "6b066bc5d8874a038cf2bab9",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261125/sports-2026-11-25-6a3c5fc335f9.mp4",
+    "queued_at": "2026-11-25T05:01:57.430559+00:00",
+    "status": "queued_in_buffer"
   }
 ]

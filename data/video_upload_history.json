@@ -147,5 +147,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261125/sports-2026-11-25-6a3c5fc335f9.mp4",
     "queued_at": "2026-11-25T05:01:57.430559+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.cricinfo.com/ci/content/story/1563814.html?ex_cid=OTC-RSS",
+    "title": "Vaibhav Sooryavanshi slams fastest 100 and 200 in List A cricket",
+    "category": "cricket",
+    "trend_score": 4.99,
+    "buffer_post_id": "6b06a352d8874a038c09bc79",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261125/sports-2026-11-25-de2d638c8a15.mp4",
+    "queued_at": "2026-11-25T08:58:58.694216+00:00",
+    "status": "queued_in_buffer"
   }
 ]

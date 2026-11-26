@@ -36,18 +36,6 @@
     "status": "pending"
   },
   {
-    "title": "Watch highlights of the weekend's SPFL action",
-    "url": "https://www.bbc.co.uk/sport/football/videos/c6p3e4388lq1o?at_medium=RSS&at_campaign=rss",
-    "summary": "Watch the best of the action from the weekend's action in the Scottish Championship, League 1 and League 2.",
-    "category": "football",
-    "content_type": "video",
-    "source": "BBC Sport",
-    "published_at": "2026-11-23T08:14:17+00:00",
-    "collected_at": "2026-11-23T16:56:53.436502+00:00",
-    "trend_score": 6.26,
-    "status": "pending"
-  },
-  {
     "title": "Vaibhav Sooryavanshi slams fastest 100 and 200 in List A cricket",
     "url": "https://www.cricinfo.com/ci/content/story/1563814.html?ex_cid=OTC-RSS",
     "summary": "The India batter now holds the record for the fastest 50, 100, 150 and 200 in List A cricket",
@@ -252,6 +240,18 @@
     "status": "pending"
   },
   {
+    "title": "Weatherald presses for a Test recall as SA battle back against Victoria",
+    "url": "https://www.cricinfo.com/ci/content/story/1564228.html?ex_cid=OTC-RSS",
+    "summary": "SA opener finished 72 not out at stumps on day three, following on from his opening day century and his 142 in the previous round against NSW",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-26T08:49:44+00:00",
+    "collected_at": "2026-11-26T08:57:11.993898+00:00",
+    "trend_score": 3.5,
+    "status": "pending"
+  },
+  {
     "title": "Pakistan A defend 168 to survive Nepal scare",
     "url": "https://www.cricinfo.com/ci/content/story/1563845.html?ex_cid=OTC-RSS",
     "summary": "Pakistan bundled out Nepal for 72 in 17.3 overs to set a semi-final against Bangladesh A on Friday",
@@ -285,6 +285,18 @@
     "published_at": "2026-11-24T08:39:32+00:00",
     "collected_at": "2026-11-24T08:57:19.747158+00:00",
     "trend_score": 3.49,
+    "status": "pending"
+  },
+  {
+    "title": "Banton 'pretty emotional' about England captaincy call-up",
+    "url": "https://www.cricinfo.com/ci/content/story/1564216.html?ex_cid=OTC-RSS",
+    "summary": "England batter \"didn't know how to react\" when coach Brendon McCullum confirmed he would lead his country in final T20I after Brook departure",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-26T08:10:39+00:00",
+    "collected_at": "2026-11-26T08:57:11.993898+00:00",
+    "trend_score": 3.48,
     "status": "pending"
   },
   {
@@ -356,18 +368,6 @@
     "source": "BBC Sport",
     "published_at": "2026-11-23T11:56:41+00:00",
     "collected_at": "2026-11-23T13:06:34.226334+00:00",
-    "trend_score": 3.47,
-    "status": "pending"
-  },
-  {
-    "title": "Three years on NI Women finally have friendlies again",
-    "url": "https://www.bbc.co.uk/sport/football/articles/cm9q8vgqerlxo?at_medium=RSS&at_campaign=rss",
-    "summary": "Michael McArdle tells BBC Sport NI of the importance of Northern Ireland having a double-header of friendlies against Greece, three and a half years on from NI's last friendly game.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-23T08:06:02+00:00",
-    "collected_at": "2026-11-23T09:17:25.136180+00:00",
     "trend_score": 3.47,
     "status": "pending"
   },
@@ -548,18 +548,6 @@
     "source": "Cricket news from Cricinfo.com",
     "published_at": "2026-11-23T13:33:32+00:00",
     "collected_at": "2026-11-23T13:39:07.444553+00:00",
-    "trend_score": 2.0,
-    "status": "pending"
-  },
-  {
-    "title": "'We are way past Covid times' - Gill wants saliva ban to be reversed",
-    "url": "https://www.cricinfo.com/ci/content/story/1563667.html?ex_cid=OTC-RSS",
-    "summary": "The India captain was not pleased with the quality of the balls after his bowlers could not take eight wickets on the fifth day in Wellington",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-23T07:46:08+00:00",
-    "collected_at": "2026-11-23T07:53:28.577619+00:00",
     "trend_score": 2.0,
     "status": "pending"
   },
@@ -788,30 +776,6 @@
     "source": "BBC Sport",
     "published_at": "2026-11-23T12:36:46+00:00",
     "collected_at": "2026-11-23T13:06:34.226334+00:00",
-    "trend_score": 1.99,
-    "status": "pending"
-  },
-  {
-    "title": "Saliva should be used to shine ball again - Gill",
-    "url": "https://www.bbc.co.uk/sport/cricket/articles/c6y80neve594o?at_medium=RSS&at_campaign=rss",
-    "summary": "The India captain calls for the ban on using saliva to shine the ball to be reversed after drawing the first Test against New Zealand in Wellington.",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-23T08:55:49+00:00",
-    "collected_at": "2026-11-23T09:17:25.136180+00:00",
-    "trend_score": 1.99,
-    "status": "pending"
-  },
-  {
-    "title": "Pioneer or coach-eater? The complex world of Pozzo's Watford",
-    "url": "https://www.bbc.co.uk/sport/football/articles/cq98z9p66g0xo?at_medium=RSS&at_campaign=rss",
-    "summary": "Pioneering or problematic? Why Gino Pozzo's 14-year Watford ownership is at a crossroads as the club search for their 26th managerial appointment on his watch.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-23T08:55:36+00:00",
-    "collected_at": "2026-11-23T09:17:25.136180+00:00",
     "trend_score": 1.99,
     "status": "pending"
   },
@@ -1092,15 +1056,27 @@
     "status": "pending"
   },
   {
-    "title": "Holloway sacked by Swindon after two seasons",
-    "url": "https://www.bbc.co.uk/sport/football/articles/c5yrg1r6ezno?at_medium=RSS&at_campaign=rss",
-    "summary": "Swindon sack manager Ian Holloway following their poor start to the League Two season.",
-    "category": "football",
+    "title": "Weekly sports quiz: What year will the UK host the Women's World Cup?",
+    "url": "https://www.bbc.co.uk/sport/articles/cm5y1g91xq3po?at_medium=RSS&at_campaign=rss",
+    "summary": "How much attention have you paid to what's happened in the world of sport over the past seven days?",
+    "category": "cricket",
     "content_type": "story",
     "source": "BBC Sport",
-    "published_at": "2026-11-23T08:44:53+00:00",
-    "collected_at": "2026-11-23T09:17:25.136180+00:00",
-    "trend_score": 1.98,
+    "published_at": "2026-11-26T08:02:45+00:00",
+    "collected_at": "2026-11-26T08:57:11.993898+00:00",
+    "trend_score": 1.97,
+    "status": "pending"
+  },
+  {
+    "title": "Latham: 'No magic answer' to returning to form",
+    "url": "https://www.cricinfo.com/ci/content/story/1564226.html?ex_cid=OTC-RSS",
+    "summary": "\"He's been clear with us in terms of how he's tracking and what's important for him,\" Tom Latham says about Kyle Jamieson's workload",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-26T07:57:00+00:00",
+    "collected_at": "2026-11-26T08:57:11.993898+00:00",
+    "trend_score": 1.97,
     "status": "pending"
   },
   {
@@ -1184,42 +1160,6 @@
     "source": "Cricket news from Cricinfo.com",
     "published_at": "2026-11-23T15:42:20+00:00",
     "collected_at": "2026-11-23T16:56:53.436502+00:00",
-    "trend_score": 1.97,
-    "status": "pending"
-  },
-  {
-    "title": "Smith, Konstas frustrated as New South Wales struggle",
-    "url": "https://www.cricinfo.com/ci/content/story/1563654.html?ex_cid=OTC-RSS",
-    "summary": "Mitchell Swepson and Michael Neser took five wickets between them to put Queensland in sight of a first-innings lead",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-23T08:20:13+00:00",
-    "collected_at": "2026-11-23T09:17:25.136180+00:00",
-    "trend_score": 1.97,
-    "status": "pending"
-  },
-  {
-    "title": "South Africa win 'sets us up nicely' - Farrell",
-    "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cmdx1n0wll0xo?at_medium=RSS&at_campaign=rss",
-    "summary": "Ireland head coach Andy Farrell says his side's victory over South Africa \"sets us up nicely\" for the the countdown to next year's World Cup.",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-23T08:10:04+00:00",
-    "collected_at": "2026-11-23T09:17:25.136180+00:00",
-    "trend_score": 1.97,
-    "status": "pending"
-  },
-  {
-    "title": "De Villiers claims ball-tampering from first 2018 Test",
-    "url": "https://www.bbc.co.uk/sport/cricket/articles/c607418zlpz4o?at_medium=RSS&at_campaign=rss",
-    "summary": "Former South Africa batter AB de Villiers says \"there is absolutely no doubt in my mind\" that Australia were altering the ball from the opening Test in 2018.",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-23T08:08:13+00:00",
-    "collected_at": "2026-11-23T09:17:25.136180+00:00",
     "trend_score": 1.97,
     "status": "pending"
   },
@@ -1376,18 +1316,6 @@
     "source": "Cricket news from Cricinfo.com",
     "published_at": "2026-11-23T11:37:00+00:00",
     "collected_at": "2026-11-23T13:06:34.226334+00:00",
-    "trend_score": 1.96,
-    "status": "pending"
-  },
-  {
-    "title": "'Our Super Bowl moment' - what can WSL learn from booming US league?",
-    "url": "https://www.bbc.co.uk/sport/football/articles/c893rk66e1l7o?at_medium=RSS&at_campaign=rss",
-    "summary": "The National Women's Soccer League in the USA is booming, so what is it getting right - and what can the Women's Super League learn?",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-23T07:52:55+00:00",
-    "collected_at": "2026-11-23T09:17:25.136180+00:00",
     "trend_score": 1.96,
     "status": "pending"
   },

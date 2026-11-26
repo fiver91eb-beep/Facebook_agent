@@ -157,5 +157,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261125/sports-2026-11-25-de2d638c8a15.mp4",
     "queued_at": "2026-11-25T08:58:58.694216+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/c5evr0y83197o?at_medium=RSS&at_campaign=rss",
+    "title": "Real Madrid put in five-star second half to win against PSV",
+    "category": "football",
+    "trend_score": 7.92,
+    "buffer_post_id": "6b07bcb9d4eda4b659db6a2c",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261126/sports-2026-11-26-4dbbadecf470.mp4",
+    "queued_at": "2026-11-26T04:59:37.274811+00:00",
+    "status": "queued_in_buffer"
   }
 ]

@@ -177,5 +177,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261126/sports-2026-11-26-c107a504b005.mp4",
     "queued_at": "2026-11-26T08:57:17.235201+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/cmqx527v3x19o?at_medium=RSS&at_campaign=rss",
+    "title": "How Isak and Wirtz are becoming Liverpool's 'big-game players'",
+    "category": "football",
+    "trend_score": 4.96,
+    "buffer_post_id": "6b090e54e94385a8fd74e6e2",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261127/sports-2026-11-27-f6c42b05f4a8.mp4",
+    "queued_at": "2026-11-27T05:00:05.463954+00:00",
+    "status": "queued_in_buffer"
   }
 ]

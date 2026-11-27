@@ -187,5 +187,15 @@
     "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261127/sports-2026-11-27-f6c42b05f4a8.mp4",
     "queued_at": "2026-11-27T05:00:05.463954+00:00",
     "status": "queued_in_buffer"
+  },
+  {
+    "url": "https://www.bbc.co.uk/sport/football/videos/c6ly51452xe7o?at_medium=RSS&at_campaign=rss",
+    "title": "Fenerbahce squeeze past Shakhtar to seal back-to-back wins",
+    "category": "football",
+    "trend_score": 4.95,
+    "buffer_post_id": "6b094619049983dcfba35121",
+    "video_url": "https://github.com/fiver91eb-beep/Facebook_agent/releases/download/sports-media-20261127/sports-2026-11-27-8200c8ffa1a4.mp4",
+    "queued_at": "2026-11-27T08:58:01.961391+00:00",
+    "status": "queued_in_buffer"
   }
 ]

@@ -240,6 +240,18 @@
     "status": "pending"
   },
   {
+    "title": "Why Cambridgeshire derby could be season-defining",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cxlyl3v8p5e0o?at_medium=RSS&at_campaign=rss",
+    "summary": "Peterborough United and Cambridge United are set for a potentially season-defining local derby at London Road.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-27T08:25:44+00:00",
+    "collected_at": "2026-11-27T08:57:56.373644+00:00",
+    "trend_score": 3.49,
+    "status": "pending"
+  },
+  {
     "title": "Sooryavanshi smashes List A records to down UAE with whirlwind 204 off 53",
     "url": "https://www.cricinfo.com/ci/content/story/1563818.html?ex_cid=OTC-RSS",
     "summary": "He scored 204 out of the 254 runs India A scored with as many as 28 sixes and seven fours",
@@ -248,18 +260,6 @@
     "source": "Cricket news from Cricinfo.com",
     "published_at": "2026-11-24T12:55:40+00:00",
     "collected_at": "2026-11-24T13:06:49.818507+00:00",
-    "trend_score": 3.49,
-    "status": "pending"
-  },
-  {
-    "title": "Weatherald makes statement with another Shield century",
-    "url": "https://www.cricinfo.com/ci/content/story/1563738.html?ex_cid=OTC-RSS",
-    "summary": "Victoria struck back late in the day although Jason Sangha's 91 appeared to end with a rough decision",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-24T08:39:32+00:00",
-    "collected_at": "2026-11-24T08:57:19.747158+00:00",
     "trend_score": 3.49,
     "status": "pending"
   },
@@ -732,15 +732,39 @@
     "status": "pending"
   },
   {
-    "title": "Why Potts swapped West Ham for Club Brugge after 16 years",
-    "url": "https://www.bbc.co.uk/sport/football/articles/cxe89j8gj96jo?at_medium=RSS&at_campaign=rss",
-    "summary": "When Liverpool visit Club Brugge on Wendesday they are likely to come up against English midfelder Freddie Potts.",
-    "category": "football",
+    "title": "England bowl, Owen and Stanlake come in for Australia",
+    "url": "https://www.cricinfo.com/ci/content/story/1564420.html?ex_cid=OTC-RSS",
+    "summary": "Billy Stanlake plays first T20I in seven years as hosts look to bounce back from Carrara mauling",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-27T08:20:58+00:00",
+    "collected_at": "2026-11-27T08:57:56.373644+00:00",
+    "trend_score": 1.98,
+    "status": "pending"
+  },
+  {
+    "title": "PCB slashes women's central contracts from 20 to eight",
+    "url": "https://www.cricinfo.com/ci/content/story/1564421.html?ex_cid=OTC-RSS",
+    "summary": "The PCB has scrapped Categories D and E altogether for the contracts that will run until the end of June 2027",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "Cricket news from Cricinfo.com",
+    "published_at": "2026-11-27T08:20:56+00:00",
+    "collected_at": "2026-11-27T08:57:56.373644+00:00",
+    "trend_score": 1.98,
+    "status": "pending"
+  },
+  {
+    "title": "Familiar faces and surprise chances as Ireland face Wallabies",
+    "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cwq6e88p619qo?at_medium=RSS&at_campaign=rss",
+    "summary": "Ireland aim to round out a successful November with victory over Australia in what Andy Farrell is treating as a dry-run before next year's World Cup.",
+    "category": "cricket",
     "content_type": "story",
     "source": "BBC Sport",
-    "published_at": "2026-11-24T08:36:50+00:00",
-    "collected_at": "2026-11-24T08:57:19.747158+00:00",
-    "trend_score": 1.99,
+    "published_at": "2026-11-27T08:08:21+00:00",
+    "collected_at": "2026-11-27T08:57:56.373644+00:00",
+    "trend_score": 1.98,
     "status": "pending"
   },
   {
@@ -1016,30 +1040,6 @@
     "source": "BBC Sport",
     "published_at": "2026-11-24T12:14:19+00:00",
     "collected_at": "2026-11-24T13:06:49.818507+00:00",
-    "trend_score": 1.98,
-    "status": "pending"
-  },
-  {
-    "title": "Labuschagne's 30s curse strikes again after Swepson's career-best",
-    "url": "https://www.cricinfo.com/ci/content/story/1563737.html?ex_cid=OTC-RSS",
-    "summary": "The third day in Sydney was truncated by rain but there may still be a chance of forcing a result",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-24T08:24:50+00:00",
-    "collected_at": "2026-11-24T08:57:19.747158+00:00",
-    "trend_score": 1.98,
-    "status": "pending"
-  },
-  {
-    "title": "Australia bat; James Coles debuts for England",
-    "url": "https://www.cricinfo.com/ci/content/story/1563779.html?ex_cid=OTC-RSS",
-    "summary": "Mitchell Marsh liked the look of the pitch and confirmed his team was going in unchanged from the win at the MCG",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-24T08:12:47+00:00",
-    "collected_at": "2026-11-24T08:57:19.747158+00:00",
     "trend_score": 1.98,
     "status": "pending"
   },
@@ -1856,18 +1856,6 @@
     "source": "BBC Sport",
     "published_at": "2026-11-25T14:57:00+00:00",
     "collected_at": "2026-11-25T19:12:14.829138+00:00",
-    "trend_score": 1.88,
-    "status": "pending"
-  },
-  {
-    "title": "League Two footballer charged with rape",
-    "url": "https://www.bbc.co.uk/news/articles/c8dx1v361vw7o?at_medium=RSS&at_campaign=rss",
-    "summary": "Isiah Noel-Williams, from St Albans, is remanded in custody charged with three rape offences.",
-    "category": "football",
-    "content_type": "story",
-    "source": "BBC Sport",
-    "published_at": "2026-11-24T08:50:17+00:00",
-    "collected_at": "2026-11-24T13:06:49.818507+00:00",
     "trend_score": 1.88,
     "status": "pending"
   },

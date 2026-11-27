@@ -216,6 +216,18 @@
     "status": "pending"
   },
   {
+    "title": "The local boy aiming to be at the heart of Cardiff City's derby aims",
+    "url": "https://www.bbc.co.uk/sport/football/articles/cq23jpng4gy9o?at_medium=RSS&at_campaign=rss",
+    "summary": "The Wales midfielder, central to Cardiff's change in fortunes, grew up in a Swansea-supporting area and has been the focal point of a Wales debate.",
+    "category": "football",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-27T13:16:05+00:00",
+    "collected_at": "2026-11-27T13:34:39.277157+00:00",
+    "trend_score": 3.49,
+    "status": "pending"
+  },
+  {
     "title": "Why Cambridgeshire derby could be season-defining",
     "url": "https://www.bbc.co.uk/sport/football/articles/cxlyl3v8p5e0o?at_medium=RSS&at_campaign=rss",
     "summary": "Peterborough United and Cambridge United are set for a potentially season-defining local derby at London Road.",
@@ -656,18 +668,6 @@
     "source": "Cricket news from Cricinfo.com",
     "published_at": "2026-11-24T16:28:37+00:00",
     "collected_at": "2026-11-24T16:59:03.142077+00:00",
-    "trend_score": 1.99,
-    "status": "pending"
-  },
-  {
-    "title": "Zimbabwe coach Coles sanctioned for 'aggressive' conduct towards Ireland captain Lewis",
-    "url": "https://www.cricinfo.com/ci/content/story/1563829.html?ex_cid=OTC-RSS",
-    "summary": "The incident took place after Zimbabwe's loss to Ireland in Women's Emerging Nations Trophy",
-    "category": "cricket",
-    "content_type": "story",
-    "source": "Cricket news from Cricinfo.com",
-    "published_at": "2026-11-24T13:16:30+00:00",
-    "collected_at": "2026-11-24T13:33:45.644018+00:00",
     "trend_score": 1.99,
     "status": "pending"
   },
@@ -1833,6 +1833,18 @@
     "published_at": "2026-11-25T00:00:00+00:00",
     "collected_at": "2026-11-25T13:11:03.367170+00:00",
     "trend_score": 1.63,
+    "status": "pending"
+  },
+  {
+    "title": "Scorchers beat Hurricanes to seal top two spot - WBBL scorecard",
+    "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-242450?at_medium=RSS&at_campaign=rss",
+    "summary": "Latest scorecard from the Women's Big Bash League match between Perth Scorchers and Hobart Hurricanes at the Waca in Perth.",
+    "category": "cricket",
+    "content_type": "story",
+    "source": "BBC Sport",
+    "published_at": "2026-11-27T00:00:00+00:00",
+    "collected_at": "2026-11-27T13:34:39.277157+00:00",
+    "trend_score": 1.62,
     "status": "pending"
   }
 ]
